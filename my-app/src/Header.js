@@ -7,7 +7,7 @@ function Header() {
       <div className="header">
         <div className="header-top">
             <h2 className="header-title">ben.allington</h2>
-            <img className="hamburger-icon" onClick={test} src={hamburgerIcon} alt="hamburger-icon"/>
+            <img className="hamburger-icon" src={hamburgerIcon} alt="hamburger-icon"/>
         </div>
         <ul className="nav-list">
             <li className="nav-list-items">Home</li>
@@ -18,10 +18,6 @@ function Header() {
     );
   }
 
-  function test() {
-    console.log('working')
-  }
-  
   
   export default Header;
   
