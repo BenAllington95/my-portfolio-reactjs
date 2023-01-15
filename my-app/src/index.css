@@ -10,11 +10,14 @@ body {
   padding: 0;
   font-family: 'Inter';
   color: #252525;
+  background-color: #F8F8F8;
 }
 
 h2, li {
   margin: 0;
 }
+
+/* Header */
 
 .header-top {
   display: flex;
@@ -24,14 +27,12 @@ h2, li {
   padding: 1em;
 }
 
-/* .header-title {
-  margin-left: 10px;
-} */
-
 .hamburger-icon {
   width: 40px;
   cursor: pointer;
 }
+
+/* Navigation */
 
 .nav-list {
   background: #252525;
@@ -46,5 +47,38 @@ h2, li {
   padding: 1em 0;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+/* Media Queries */
+
+@media (min-width: 600px) {
+  
+  .hamburger-icon {
+    display: none;
+  }
+
+  .header-top {
+    border: none;
+    padding: 0;
+  }
+
+  .nav-list {
+    display: flex;
+    background: none;
+    border: none;
+  }
+
+  .nav-list-items {
+    color: #252525;
+    list-style-type: none;
+    margin-left: 0.75em;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0em 3em;
+  }
+
 }
 
