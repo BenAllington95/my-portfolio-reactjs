@@ -6,7 +6,7 @@ function Header() {
     return (
       <div className="header">
         <div className="header-top">
-            <h2 className="header-title">Ben.<span className="white-text">allington</span></h2>
+            <h2 className="header-title">Ben.<span className="white-text">Allington</span></h2>
             <img className="hamburger-icon" src={hamburgerIcon} alt="hamburger-icon"/>
         </div>
         <ul className="nav-list">
