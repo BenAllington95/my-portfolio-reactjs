@@ -2,7 +2,7 @@
 function Main() {
     return (
       <div className="main">
-        <h1 className="main-heading">Hi, I'm Ben</h1>
+        <h1 className="main-heading"><span className="white-text">Hi, I'm </span>Ben.</h1>
         <p className="main-subheading">Front End Developer</p>
       </div>
     );

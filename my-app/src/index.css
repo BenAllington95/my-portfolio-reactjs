@@ -25,6 +25,9 @@ h1 {
   font-size: 3rem;
 }
 
+.white-text {
+  color: #DCDCDC;
+}
 
 
 /* Header */
@@ -33,7 +36,6 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border-bottom: 1px solid #DCDCDC; */
   padding: 1em;
 }
 
@@ -41,6 +43,10 @@ h1 {
   width: 40px;
   cursor: pointer;
   background:#DCDCDC;
+}
+
+.header-title {
+  color: #FFD56F;
 }
 
 /* Navigation */
@@ -58,6 +64,7 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
   color:#FFD56F;
+  cursor: pointer;
 }
 
 /* Main */
@@ -109,9 +116,15 @@ h1 {
     color: #121212;
     list-style-type: none;
     margin-left: 0.75em;
+    background: #DCDCDC;
+    padding: 6px 15px;
+    border-radius: 5px;
+  }
+
+  .nav-list-items:hover, 
+  .nav-list-items:focus {
     background: #FFD56F;
-    padding: 10px 20px;
-    border-radius: 7px;
+    color: #252525;
   }
 
   .header {
@@ -120,7 +133,16 @@ h1 {
     padding: 0em 3em;
     background: #121212;
     color: #DCDCDC;
+    /* min-height: 7vh; */
   }
+
+  /* Main */
+
+  .main {
+    min-height: 92vh;
+  }
+
+
 
 }
 
