@@ -43,6 +43,7 @@ h1 {
   width: 40px;
   cursor: pointer;
   background:#DCDCDC;
+  border-radius: 7px;
 }
 
 .header-title {
@@ -89,7 +90,7 @@ h1 {
 
 .main-subheading {
   font-size: 1rem;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   color: #FFD56F;
 }
@@ -118,10 +119,9 @@ h1 {
   }
 
   .nav-list-items {
-    color: #121212;
+    color: #DCDCDC;
     list-style-type: none;
     margin-left: 0.75em;
-    background: #DCDCDC;
     padding: 6px 15px;
     border-radius: 5px;
   }
@@ -148,12 +148,17 @@ h1 {
 
   .main-subheading {
     font-size: 1.75rem;
+    letter-spacing: 4px;
   }
 
 }
 
 
 @media (min-width: 800px) {
+
+  .header {
+    padding: 0 5em;
+  }
 
 /* Main */
 
