@@ -89,14 +89,14 @@ h1 {
 
 .main-subheading {
   font-size: 1rem;
-  letter-spacing: 2.9px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   color: #FFD56F;
 }
 
 /* Media Queries */
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
 
   h1 {
     font-size: 5rem;
@@ -146,20 +146,31 @@ h1 {
     min-height: 92vh;
   }
 
-  .main-heading {
-    position: absolute;
-    top: 150px;
-    left: 150px;
+  .main-subheading {
+    font-size: 1.75rem;
   }
+
+}
+
+
+@media (min-width: 800px) {
+
+/* Main */
 
   .main-subheading {
     position: absolute;
     top: 245px;
-    left: 150px;
-    font-size: 1.5rem;
+    left: 250px;
+    
   }
 
-
-
+  .main-heading {
+    position: absolute;
+    top: 150px;
+    left: 250px;
+  }
+  
 }
+
+
 
