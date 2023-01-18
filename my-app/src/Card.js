@@ -1,7 +1,7 @@
 export default function Card(props) {
     return (
         <div className="card">
-            <h3>{props.title}</h3>
+            <h3 className="card-title">{props.title}</h3>
         </div>
     )
 }

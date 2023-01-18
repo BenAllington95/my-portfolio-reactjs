@@ -29,6 +29,10 @@ h1 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 p {
   font-size: 1.25rem;
 }
@@ -56,6 +60,7 @@ p {
 
 .header-title {
   color: #FFD56F;
+  font-size: 1.5rem;
 }
 
 /* Navigation */
@@ -114,7 +119,7 @@ p {
 .sub-heading {
   color: #FFD56F;
   text-align: center;
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   text-shadow: 2px 2px #252525;
 }
 
@@ -130,18 +135,33 @@ p {
 
 /* Projects */
 
-.card {
-  width: 250px;
-  height: 300px;
-  background: #252525;
-  border-radius: 10px;
+.projects {
+  padding: 2em;
 }
 
 .project-cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 550px;
+  height: 400px;
+  background: #252525;
+  border-radius: 10px;
+  transition: background 0.5s;
+}
+
+.card:hover {
+  background: #515151;
+}
+
+.card-title {
+  color: #DCDCDC;
+  text-align: center;
 }
 
 /* Media Queries */
@@ -150,6 +170,10 @@ p {
 
   h1 {
     font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
   }
   
   .hamburger-icon {
@@ -192,7 +216,7 @@ p {
   /* Main */
 
   .main {
-    min-height: 92vh;
+    min-height: 94vh;
   }
 
   .main-subheading {
@@ -200,6 +224,13 @@ p {
     letter-spacing: 4px;
   }
 
+  /* Projects */
+  
+  .card {
+    max-width: 300px;
+    height: 300px;
+  }
+  
 }
 
 
