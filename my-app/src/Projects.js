@@ -18,7 +18,12 @@ function Projects() {
    
     return (
       <div className="projects">
-        {projectMap}
+        <div className="container">
+          <h2 className="sub-heading">projects</h2>
+          <div className="project-cards">
+          {projectMap}
+          </div>
+        </div>
       </div>
     );
   }
