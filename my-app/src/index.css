@@ -14,7 +14,7 @@ body {
   padding: 0;
   font-family: 'Inter';
   color: #252525;
-  background-color: #121212;
+  background-color: #141414;
 }
 
 h2, 
@@ -80,7 +80,7 @@ a {
 /* Navigation */
 
 .nav-list {
-  background: #121212;
+  background: #141414;
   color: whitesmoke;
   padding: 1em 0;
   margin: 0;
@@ -128,6 +128,7 @@ a {
 
 .about {
   padding: 3em;
+  background: #141414;
 }
 
 .sub-heading {
@@ -141,6 +142,16 @@ a {
   margin-bottom: 1em;
   color: #DCDCDC;
   line-height: 1.6;
+}
+
+.about-img {
+  width: 60%;
+  border-radius: 50%;
+  max-width: 300px;
+  filter: grayscale(0.3);
+  display: block;
+  margin: auto;
+  margin-bottom: 2em;
 }
 
 .about-text:last-child {
@@ -164,12 +175,13 @@ a {
   width: 100%;
   max-width: 450px;
   height: 300px;
-  background: #252525;
+  background: #191919;
   border-radius: 10px;
   transition: filter 0.3s;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .card-box-text {
@@ -240,7 +252,7 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 0em 3em;
-    background: #121212;
+    background: #141414;
     color: #DCDCDC;
   }
 
