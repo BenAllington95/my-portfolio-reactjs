@@ -17,8 +17,6 @@ body {
   background-color: #121212;
 }
 
-/* Typography */
-
 h2, 
 li,
 p,
@@ -31,12 +29,8 @@ h1 {
   font-size: 3rem;
 }
 
-h2 {
-  font-size: 2.25rem;
-}
-
 p {
-  font-size: 1.1rem;
+  font-size: 1.25rem;
 }
 
 .white-text {
@@ -62,7 +56,6 @@ p {
 
 .header-title {
   color: #FFD56F;
-  font-size: 1.5rem;
 }
 
 /* Navigation */
@@ -115,7 +108,7 @@ p {
 /* About */
 
 .about {
-  padding: 3em;
+  padding: 2em;
 }
 
 .about-heading {
@@ -141,20 +134,6 @@ p {
 
   h1 {
     font-size: 5rem;
-  }
-
-  h2 {
-    font-size: 3rem;
-  }
-
-  p {
-    font-size: 1.5rem;
-  }
-
-  .container {
-    max-width: 700px;
-    width: 90%;
-    margin: 0 auto;
   }
   
   .hamburger-icon {
@@ -214,6 +193,12 @@ p {
     padding: 0 5em;
   }
 
+  .container {
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
 /* Main */
 
   .main-subheading {
@@ -231,6 +216,7 @@ p {
 
   /* About */
 
+  
   
 }
 
