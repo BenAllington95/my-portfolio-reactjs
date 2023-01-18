@@ -1,19 +1,14 @@
-export default {
-    projects: [
-        {
-            id: 'Diner App'
-        },
-        {
-            id: 'Password Generator'
-        },
-        {
-            id: 'RGB Colour Generator'
-        },
-        {
-            id: 'To Do List'
-        },
-        {
-            id: 'Unit Converter'
-        }
-    ]
-}
+export default [
+    {
+        title: 'Diner App'
+    },
+    {
+        title: 'Password Generator'
+    },
+    {
+        title: 'RGB Random Generator'
+    },
+    {
+        title: 'Test'
+    }
+]
