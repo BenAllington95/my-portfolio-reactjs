@@ -152,16 +152,27 @@ p {
   height: 400px;
   background: #252525;
   border-radius: 10px;
-  transition: background 0.5s;
+  transition: filter 0.3s;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .card:hover {
-  background: #515151;
+  filter: brightness(120%);
 }
 
 .card-title {
   color: #DCDCDC;
   text-align: center;
+}
+
+.card-img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /* Media Queries */

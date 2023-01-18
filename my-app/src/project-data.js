@@ -1,6 +1,7 @@
 export default [
     {
-        title: 'Diner App'
+        title: 'Diner App',
+        url: require('./images/diner-img.png')
     },
     {
         title: 'Password Generator'

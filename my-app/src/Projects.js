@@ -13,8 +13,6 @@ function Projects() {
         />
     )
   })
-
-
    
     return (
       <div className="projects">
