@@ -1,6 +1,6 @@
 export default [
     {
-        title: 'Diner App',
+        title: 'Diner app',
         url: require('./images/diner-img.png')
     },
     {
@@ -8,9 +8,11 @@ export default [
         url: require('./images/password-img.png')
     },
     {
-        title: 'RGB Random Generator'
+        title: 'RGB Random Generator',
+        url: require('./images/rgb-generator-img.png')
     },
     {
-        title: 'Test'
+        title: 'Unit Converter',
+        url: require('./images/unit-converter-img.png')
     }
 ]
