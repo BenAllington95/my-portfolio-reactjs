@@ -4,7 +4,8 @@ export default [
         url: require('./images/diner-img.png')
     },
     {
-        title: 'Password Generator'
+        title: 'Password Generator',
+        url: require('./images/password-img.png')
     },
     {
         title: 'RGB Random Generator'
