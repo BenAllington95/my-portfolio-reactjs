@@ -1,6 +1,6 @@
 export default [
     {
-        title: 'Diner app',
+        title: 'Diner App',
         url: require('./images/diner-img.png')
     },
     {

@@ -38,8 +38,21 @@ p {
   font-size: 1.25rem;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .white-text {
   color: #DCDCDC;
+}
+
+.yellow-text {
+  color: #FFD56F;
+}
+
+.yellow-text:hover {
+  color: #ffdf93;
 }
 
 
@@ -114,7 +127,7 @@ p {
 /* About */
 
 .about {
-  padding: 2em;
+  padding: 3em;
 }
 
 .sub-heading {
@@ -137,7 +150,7 @@ p {
 /* Projects */
 
 .projects {
-  padding: 2em;
+  padding: 3em;
 }
 
 .project-cards {
@@ -150,13 +163,19 @@ p {
 .card {
   width: 100%;
   max-width: 450px;
-  height: 400px;
+  height: 300px;
   background: #252525;
   border-radius: 10px;
   transition: filter 0.3s;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+}
+
+.card-box-text {
+  display: grid;
+  place-content: center;
+  height: 20%; 
 }
 
 .card:hover {
@@ -242,7 +261,7 @@ p {
     max-width: 300px;
     height: 300px;
   }
-  
+
 }
 
 

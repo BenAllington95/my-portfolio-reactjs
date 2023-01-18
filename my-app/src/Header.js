@@ -11,7 +11,8 @@ function Header() {
         </div>
         <ul className="nav-list">
             <li className="nav-list-items"><ion-icon name="home-sharp"></ion-icon></li>
-            <li className="nav-list-items">About</li>
+            <li className="nav-list-items"><a href="#about">About</a></li>
+            <li className="nav-list-items"><a href="#projects">Projects</a></li>
             <li className="nav-list-items">Contact</li>
             <li className="nav-list-items"><ion-icon className="moon-sharp" name="moon-sharp"></ion-icon></li>
         </ul>
