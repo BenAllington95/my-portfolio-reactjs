@@ -31,7 +31,7 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 p {
@@ -134,9 +134,9 @@ a {
 .sub-heading {
   color: #FFD56F;
   text-align: center;
-  margin-bottom: 1em;
   text-shadow: 2px 2px #252525;
 }
+
 
 .about-text {
   margin-bottom: 1em;
@@ -145,13 +145,15 @@ a {
 }
 
 .about-img {
-  width: 60%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
   border-radius: 50%;
-  max-width: 300px;
   filter: grayscale(0.3);
   display: block;
   margin: auto;
-  margin-bottom: 2em;
+  margin-bottom: 2em; 
+  margin-top: 2em;
 }
 
 .about-text:last-child {
@@ -169,6 +171,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  margin-top: 2em;
 }
 
 .card {
