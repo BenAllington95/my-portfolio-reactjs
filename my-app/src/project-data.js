@@ -18,5 +18,10 @@ export default [
         title: 'Unit Converter',
         url: require('./images/unit-converter-img.png'),
         siteUrl: "https://benunitconverter.netlify.app/"
-    }
+    },
+    {
+        title: 'Comment Section',
+        url: require('./images/comments-img.png'),
+        siteUrl: "https://benallington-commentsection.netlify.app"
+    },
 ]
