@@ -322,7 +322,7 @@ a {
 }
 
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
 
   .header {
     padding: 0 5em;
@@ -334,7 +334,18 @@ a {
     margin: 0 auto;
   }
 
-/* Main */
+  /* About */
+
+  .about {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+}
+
+@media (min-width: 1300px) {
+  
+  /* Main */
 
   .main-subheading {
     position: absolute;
@@ -349,11 +360,5 @@ a {
     left: 250px;
   }
 
-  /* About */
-
-  
-  
 }
-
-
 
