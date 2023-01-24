@@ -343,22 +343,4 @@ a {
   
 }
 
-@media (min-width: 1300px) {
-  
-  /* Main */
-
-  .main-subheading {
-    position: absolute;
-    top: 245px;
-    left: 250px;
-    
-  }
-
-  .main-heading {
-    position: absolute;
-    top: 150px;
-    left: 250px;
-  }
-
-}
 
