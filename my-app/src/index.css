@@ -257,13 +257,25 @@ a {
 
   .header-top {
     border: none;
-    padding: 0;
+    padding: 1em;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 9999; 
+    width: 100%; 
+    background: #141414;
+    /* background-color: #00a087; */
   }
 
   .nav-list {
     display: flex;
     background: none;
     border: none;
+    position: fixed; 
+    top: 0; 
+    right: 0; 
+    z-index: 9999; 
+    padding: 1em;
   }
 
   .nav-list-items {
