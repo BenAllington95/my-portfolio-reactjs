@@ -239,6 +239,20 @@ a {
   border-bottom-right-radius: 10px;
 }
 
+.card:hover {
+  background: #FFD56F;
+}
+
+.card:hover > .card-box-text {
+  background: #191919;
+  border-top-left-radius: 7.5px;
+  border-top-right-radius: 7.5px;
+}
+
+.card:hover > .card-img {
+  mix-blend-mode: darken;
+}
+
 /* Media Queries */
 
 @media (min-width: 700px) {
