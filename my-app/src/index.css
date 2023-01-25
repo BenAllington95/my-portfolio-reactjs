@@ -74,6 +74,37 @@ a {
   color: #DCDCDC;
 }
 
+/* Color Schemes */
+
+.header-title, 
+.nav-list-items,
+.main-heading,
+.main-subheading, 
+.yellow-text {
+  color: #E2CF00;
+}
+
+.card:hover {
+  background: #E2CF00;
+}
+
+.nav-list,
+.sub-heading,
+.card-title,
+.card-link {
+  color: #DCDCDC;
+}
+
+.nav-list,
+.card {
+  background: #181818;
+}
+
+.projects,
+.card-link {
+  background: #222222;
+}
+
 /* Header */
 
 .header-top {
@@ -91,15 +122,12 @@ a {
 }
 
 .header-title {
-  color: #E2CF00;
   font-size: 1.5rem;
 }
 
 /* Navigation */
 
 .nav-list {
-  background: #181818;
-  color: whitesmoke;
   padding: 1em 0;
   margin: 0;
   text-align: center;
@@ -109,7 +137,6 @@ a {
   padding: 1em 0;
   font-weight: bold;
   text-transform: uppercase;
-  color:#E2CF00;
   cursor: pointer;
 }
 
@@ -129,16 +156,14 @@ a {
   background-repeat: no-repeat;
 }
 
-.main-heading {
-  color: #E2CF00;
-  text-shadow: 1px 1px #3E3E3E;
-}
-
 .main-subheading {
   font-size: 1rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #E2CF00;
+}
+
+.main-heading,
+.main-subheading {
   text-shadow: 1px 1px #3E3E3E;
 }
 
@@ -150,7 +175,7 @@ a {
 }
 
 .sub-heading {
-  color: #E2CF00;
+  color: #DCDCDC;
   text-align: center;
   text-shadow: 2px 2px #3E3E3E;
   margin: 0;
@@ -181,10 +206,6 @@ a {
 
 /* Projects */
 
-.projects {
-  background: #252525;
-}
-
 .project-cards {
   display: flex;
   flex-wrap: wrap;
@@ -197,7 +218,6 @@ a {
   width: 100%;
   max-width: 450px;
   height: 300px;
-  background: #181818;
   border-radius: 10px;
   transition: filter 0.3s;
   display: flex;
@@ -218,7 +238,6 @@ a {
 }
 
 .card-title {
-  color: #DCDCDC;
   text-align: center;
 }
 
@@ -232,8 +251,6 @@ a {
 .card-link {
   display: block;
   padding: 0.5em 0.7em;
-  background:#252525;
-  color: #DCDCDC;
   transition: filter 0.3s;
   border-radius: 5px;
 }
@@ -250,11 +267,7 @@ a {
   border-bottom-right-radius: 10px;
 }
 
-/* .card:hover {
-  background: #E2CF00;
-} */
-
-/* .card:hover > .card-box-text {
+ .card:hover > .card-box-text {
   background: #181818;
   border-top-left-radius: 7.5px;
   border-top-right-radius: 7.5px;
@@ -262,7 +275,7 @@ a {
 
 .card:hover > .card-img {
   mix-blend-mode: darken;
-} */
+}
 
 /* Media Queries */
 
