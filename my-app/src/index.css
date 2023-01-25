@@ -12,8 +12,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter';
-  color: #252525;
-  background-color: #141414;
+  /* color: #252525; */
 }
 
 h2, 
@@ -63,7 +62,7 @@ a {
 
 .light-background {
   background: #DCDCDC;
-  color: #191919;
+  color: #252525;
 }
 
 /* Dark Mode */
@@ -123,8 +122,6 @@ a {
   align-items: center;
   justify-content: center;
   background-image: url('./images/alesia-kazantceva-VWcPlbHglYc-unsplash.png');
-  background-color: #FFD56F;
-  background-blend-mode: darken;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -146,8 +143,7 @@ a {
 /* About */
 
 .about {
-  padding: 4em 2em;
-  /* background: #141414; */
+  padding: 3em;
 }
 
 .sub-heading {
@@ -160,7 +156,6 @@ a {
 
 .about-text {
   margin-bottom: 1em;
-  color: #DCDCDC;
   line-height: 1.6;
 }
 
@@ -359,16 +354,7 @@ a {
     max-width: 800px;
     width: 90%;
     margin: 0 auto;
-  }
-
-  /* About */
-
-  .about {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
- 
+  } 
   
 }
 

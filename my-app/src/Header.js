@@ -23,7 +23,7 @@ function Header() {
   
 
     return (
-      <div id="header" className="header">
+      <div id="header" className="header dark-background">
         <div className="header-top">
             <h2 className="header-title">ben.<span className="white-text">allington</span></h2>
             <img className="hamburger-icon" style={styles} src={navDisplay ? closeIcon : hamburgerIcon} onClick={toggleNavDisplay} alt="hamburger-icon"/>
