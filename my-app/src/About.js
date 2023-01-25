@@ -4,8 +4,6 @@ function About() {
 
     const [theme, setTheme] = useState(false)
 
-
-
     return (
       <div className={`about ${theme ? "light-background" : "dark-background"}`} id="about">
           <div className="container">
