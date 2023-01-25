@@ -8,7 +8,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 body {
   margin: 0;
   padding: 0;
@@ -59,6 +58,20 @@ a {
   font-style: italic;
 }
 
+
+/* Light Mode */
+
+.light-background {
+  background: #DCDCDC;
+  color: #191919;
+}
+
+/* Dark Mode */
+
+.dark-background {
+  background: #191919;
+  color: #DCDCDC;
+}
 
 /* Header */
 
@@ -134,7 +147,7 @@ a {
 
 .about {
   padding: 4em 2em;
-  background: #141414;
+  /* background: #141414; */
 }
 
 .sub-heading {

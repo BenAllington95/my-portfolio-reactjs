@@ -1,7 +1,13 @@
+import React, { useState } from 'react';
 
 function About() {
+
+    const [theme, setTheme] = useState(false)
+
+
+
     return (
-      <div className="about" id="about">
+      <div className={`about ${theme ? "light-background" : "dark-mode"}`} id="about">
           <div className="container">
             <h2 className="sub-heading">about</h2>
             <img className="about-img" src={require("./images/profile-img.png")} />
