@@ -7,7 +7,7 @@ import React, { useState, useRef } from 'react';
 
 function Header() {
 
-    const [navDisplay, setNavDisplay] = useState(false)
+    const [navDisplay, setNavDisplay] = useState(true)
     const windowSize = useRef(window.innerWidth);
 
 
