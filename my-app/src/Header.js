@@ -2,20 +2,23 @@
 import hamburgerIcon from "./images/reorder-three-outline.svg";
 import closeIcon from "./images/close-sharp.svg";
 
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 
 function Header() {
 
     const [navDisplay, setNavDisplay] = useState(false)
+    const windowSize = useRef(window.innerWidth);
+
 
     const styles = {
       backgroundColor: navDisplay ? "#FFD56F" : "#DCDCDC"
     }
     
     function toggleNavDisplay() {
-      setNavDisplay(prevDisplay => !prevDisplay)
+      setNavDisplay(prevDisplay => !prevDisplay)      
     }
+
 
   
 
@@ -25,7 +28,7 @@ function Header() {
             <h2 className="header-title">ben.<span className="white-text">allington</span></h2>
             <img className="hamburger-icon" style={styles} src={navDisplay ? closeIcon : hamburgerIcon} onClick={toggleNavDisplay} alt="hamburger-icon"/>
         </div>
-        { navDisplay && <ul className="nav-list">
+        {navDisplay && <ul className="nav-list">
             <a href="#header"><li className="nav-list-items"><ion-icon name="home-sharp"></ion-icon></li></a>
             <a href="#about"><li className="nav-list-items">About</li></a>
             <a href="#projects"><li className="nav-list-items">Projects</li></a>
