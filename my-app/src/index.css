@@ -84,10 +84,6 @@ a {
   color: #E2CF00;
 }
 
-.card:hover {
-  background: #E2CF00;
-}
-
 .nav-list,
 .sub-heading,
 .card-title,
@@ -267,7 +263,7 @@ a {
   border-bottom-right-radius: 10px;
 }
 
- .card:hover > .card-box-text {
+ /* .card:hover > .card-box-text {
   background: #181818;
   border-top-left-radius: 7.5px;
   border-top-right-radius: 7.5px;
@@ -275,7 +271,7 @@ a {
 
 .card:hover > .card-img {
   mix-blend-mode: darken;
-}
+} */
 
 /* Media Queries */
 
