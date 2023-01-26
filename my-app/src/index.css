@@ -80,12 +80,12 @@ a {
 .nav-list-items,
 .main-heading,
 .main-subheading, 
-.yellow-text {
+.yellow-text, 
+.sub-heading {
   color: #E2CF00;
 }
 
 .nav-list,
-.sub-heading,
 .card-title,
 .card-link {
   color: #DCDCDC;
@@ -171,7 +171,6 @@ a {
 }
 
 .sub-heading {
-  color: #DCDCDC;
   text-align: center;
   text-shadow: 2px 2px #3E3E3E;
   margin: 0;
