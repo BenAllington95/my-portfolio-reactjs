@@ -21,7 +21,8 @@ li,
 p,
 ul,
 h1,
-h3 {
+h3,
+a {
   margin: 0;
 }
 
@@ -62,21 +63,35 @@ a {
 /* Dark Mode */
 
 #dark .about,
-#dark .header
-#dark .nav-list {
+#dark .header,
+#dark .header-top {
   background: #181818;
-  color: #DCDCDC;
 }
 
 #dark .projects {
   background: #222222;
 }
 
+#dark .card {
+  background: #181818;
+}
+
 #dark .nav-list,
 #dark .card-title,
-#dark .card-link {
+#dark .card-link,
+#dark .nav-list,
+#dark .card-title,
+#dark .card-link,
+#dark .sub-heading,
+#dark .about-text {
   color: #DCDCDC;
 }
+
+#dark .card-link {
+  background: #222222;
+}
+
+
 
 
 
@@ -94,7 +109,7 @@ a {
 }
 
 #light .card {
-  background:#DCDCDC;
+  background: #DCDCDC;
 }
 
 #light .card-link {
@@ -114,26 +129,15 @@ a {
   color: #181818;
 }
 
-#dark .nav-list,
-#dark .card-title,
-#dark .card-link {
-  color: #181818;
+#light .sub-heading {
+  color: #222222;
 }
 
 
 /* Color Schemes */
 
-.header-title, 
-.nav-list-items,
-.main-heading,
-.main-subheading, 
-.yellow-text, 
-.sub-heading {
+.yellow-text {
   color: #E2CF00;
-}
-
-.card {
-  background: #181818;
 }
 
 /* Header */
@@ -182,6 +186,7 @@ a {
   align-items: center;
   justify-content: center;
   background-image: url('./images/alesia-kazantceva-VWcPlbHglYc-unsplash.png');
+  background-blend-mode:hard-light;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -317,8 +322,6 @@ a {
     left: 0; 
     z-index: 9999; 
     width: 100%; 
-    background: #181818;
-    /* background-color: #00a087; */
   }
 
   .nav-list {
