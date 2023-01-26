@@ -17,12 +17,13 @@ body {
 }
 
 h2, 
-li,
+ul li,
 p,
 ul,
 h1,
 h3,
-a {
+a,
+.moon-sharp {
   margin: 0;
 }
 
@@ -59,12 +60,12 @@ a {
   font-style: italic;
 }
 
-
 /* Dark Mode */
 
 #dark .about,
 #dark .header,
-#dark .header-top {
+#dark .header-top,
+#dark .footer {
   background: #181818;
 }
 
@@ -76,32 +77,38 @@ a {
   background: #181818;
 }
 
+#dark .about,
+#dark .header,
+#dark .header-top,
 #dark .nav-list,
+#dark .nav-list-items,
 #dark .card-title,
 #dark .card-link,
 #dark .nav-list,
 #dark .card-title,
 #dark .card-link,
 #dark .sub-heading,
-#dark .about-text {
+#dark .about-text, 
+#dark .sub-heading {
   color: #DCDCDC;
+} /* Need to create a class to make this easier to understand */
+
+#dark .nav-list-items:hover {
+  color: #222222;
+  background: #DCDCDC;
 }
 
 #dark .card-link {
   background: #222222;
 }
 
-
-
-
-
 /* Light Mode */
 
 #light .about,
 #light .header,
-#light .header-top {
+#light .header-top,
+#light .footer {
   background: #DCDCDC;
-  color: #222222;
 }
 
 #light .projects {
@@ -116,29 +123,26 @@ a {
   background: #C5C5C5;
 }
 
-#light .nav-list-items {
-  color: #222222;
-}
-
 #light .nav-list-items:hover {
   background: #222222;
-  color: #E2CF00;
+  color: #DCDCDC;
 }
 
-#light h2 {
-  color: #181818;
-}
-
+#light .about,
+#light .header,
+#light .header-top,
+#light .nav-list,
+#light .nav-list-items,
+#light .card-title,
+#light .card-link,
+#light .nav-list,
+#light .card-title,
+#light .card-link,
+#light .sub-heading,
+#light .about-text, 
 #light .sub-heading {
   color: #222222;
-}
-
-
-/* Color Schemes */
-
-.yellow-text {
-  color: #E2CF00;
-}
+} /* Need to create a class to make this easier to understand */
 
 /* Header */
 
@@ -310,36 +314,23 @@ a {
     font-size: 3rem;
   }
 
-  .hamburger-icon {
+  /* .hamburger-icon {
     display: none;
-  }   
+  }   */
 
-  .header-top {
-    border: none;
-    padding: 1em;
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    z-index: 9999; 
-    width: 100%; 
-  }
 
   .nav-list {
     display: flex;
+    align-items: center;
     background: none;
     border: none;
-    position: fixed; 
-    top: 0; 
-    right: 0; 
-    z-index: 9999; 
-    padding: 1em;
+    padding: 0;
   }
 
   .nav-list-items {
-    color: #DCDCDC;
     list-style-type: none;
     margin-left: 0.75em;
-    padding: 6px 15px;
+    padding: 10px;
     border-radius: 5px;
     transition: background 0.2s, color 0.2s;
   }
@@ -353,6 +344,7 @@ a {
   .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 0em 3em;
     background: #181818;
     color: #DCDCDC;
@@ -381,12 +373,8 @@ a {
 
 @media (min-width: 900px) {
 
-  .header {
-    padding: 0 5em;
-  }
-
   .container {
-    max-width: 800px;
+    max-width: 700px;
     width: 90%;
     margin: 0 auto;
   } 
