@@ -62,14 +62,46 @@ a {
 
 /* Light Mode */
 
-.light-background {
+
+
+#dark .about,
+#dark .header
+#dark .nav-list {
+  background: #181818;
+  color: #DCDCDC;
+}
+
+#dark .projects {
+  background: #222222;
+}
+
+
+
+#light .about,
+#light .header,
+#light .nav-list {
+  background: #DCDCDC;
+  color: #222222;
+}
+
+#light .projects {
+  background: #c2c2c2;
+}
+
+
+#light h2 {
+  color: #181818;
+}
+
+
+.light {
   background: #DCDCDC;
   color: #3E3E3E;
 }
 
 /* Dark Mode */
 
-.dark-background {
+.dark {
   background: #181818;
   color: #DCDCDC;
 }
@@ -91,7 +123,6 @@ a {
   color: #DCDCDC;
 }
 
-.nav-list,
 .card {
   background: #181818;
 }

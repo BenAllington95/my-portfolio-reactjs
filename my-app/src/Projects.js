@@ -3,7 +3,7 @@ import projectData from "./project-data";
 import Card from "./Card"
 
 
-function Projects() {
+function Projects(props) {
 
   const projectMap = projectData.map(function(proj) {
     return (
@@ -15,7 +15,7 @@ function Projects() {
   })
    
     return (
-      <div className="projects" id="projects">
+      <div className={`projects ${props.theme}`} id="projects">
         <div className="container">
           <h2 className="sub-heading">projects</h2>
           <div className="project-cards">

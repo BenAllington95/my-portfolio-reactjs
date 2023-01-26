@@ -5,10 +5,9 @@ import closeIcon from "./images/close-sharp.svg";
 import React, { useState, useRef } from 'react';
 
 
-function Header() {
+function Header(props) {
 
     const [navDisplay, setNavDisplay] = useState(true)
-    const windowSize = useRef(window.innerWidth);
 
 
     const styles = {
@@ -23,7 +22,7 @@ function Header() {
   
 
     return (
-      <div id="header" className="header dark-background">
+      <div id="header" className={`header ${props.theme}`}>
         <div className="header-top">
             <h2 className="header-title">ben.<span className="white-text">allington</span></h2>
             <img className="hamburger-icon" style={styles} src={navDisplay ? closeIcon : hamburgerIcon} onClick={toggleNavDisplay} alt="hamburger-icon"/>
