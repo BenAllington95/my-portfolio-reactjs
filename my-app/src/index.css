@@ -62,34 +62,34 @@ a {
 
 /* Dark Mode */
 
-#dark .about,
-#dark .header,
-#dark .header-top,
-#dark .footer {
+.about,
+.header,
+.header-top,
+.footer {
   background: #181818;
 }
 
-#dark .projects {
+.projects {
   background: #222222;
 }
 
-#dark .card {
+.card {
   background: #181818;
 }
 
-#dark .about,
-#dark .header,
-#dark .header-top,
-#dark .nav-list,
-#dark .nav-list-items,
-#dark .card-title,
-#dark .card-link,
-#dark .nav-list,
-#dark .card-title,
-#dark .card-link,
-#dark .sub-heading,
-#dark .about-text, 
-#dark .sub-heading {
+.about,
+.header,
+.header-top,
+.nav-list,
+.nav-list-items,
+.card-title,
+.card-link,
+.nav-list,
+.card-title,
+.card-link,
+.sub-heading,
+.about-text, 
+.sub-heading {
   color: #DCDCDC;
 } /* Need to create a class to make this easier to understand */
 
@@ -101,48 +101,6 @@ a {
 #dark .card-link {
   background: #222222;
 }
-
-/* Light Mode */
-
-#light .about,
-#light .header,
-#light .header-top,
-#light .footer {
-  background: #DCDCDC;
-}
-
-#light .projects {
-  background: #C5C5C5;
-}
-
-#light .card {
-  background: #DCDCDC;
-}
-
-#light .card-link {
-  background: #C5C5C5;
-}
-
-#light .nav-list-items:hover {
-  background: #222222;
-  color: #DCDCDC;
-}
-
-#light .about,
-#light .header,
-#light .header-top,
-#light .nav-list,
-#light .nav-list-items,
-#light .card-title,
-#light .card-link,
-#light .nav-list,
-#light .card-title,
-#light .card-link,
-#light .sub-heading,
-#light .about-text, 
-#light .sub-heading {
-  color: #222222;
-} /* Need to create a class to make this easier to understand */
 
 /* Header */
 
@@ -362,8 +320,8 @@ a {
   /* Projects */
   
   .card {
-    max-width: 300px;
-    height: 300px;
+    max-width: 250px;
+    height: 250px;
   }
 
 }

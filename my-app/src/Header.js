@@ -32,7 +32,7 @@ function Header(props) {
             <a href="#about"><li className="nav-list-items">About</li></a>
             <a href="#projects"><li className="nav-list-items">Projects</li></a>
             <a href="#projects"><li className="nav-list-items">Contact</li></a>
-            <li className="nav-list-items"><ion-icon className="moon-sharp" name="moon-sharp"></ion-icon></li>
+            {/* <li className="nav-list-items"><ion-icon className="moon-sharp" name="moon-sharp"></ion-icon></li> */}
         </ul>}
       </div>
     );
