@@ -349,16 +349,6 @@ a {
     padding: 3em;
   }
 
-  .fade-in {
-    opacity: 0;
-    transition: opacity 250ms ease-in;
-  }
-
-  .fade-in.appear {
-    opacity: 1;
-  }
-
-
   .nav-list {
     display: flex;
     align-items: center;

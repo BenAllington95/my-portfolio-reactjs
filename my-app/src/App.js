@@ -9,19 +9,14 @@ import React, { useState } from 'react';
 
 function App() {
 
-  const [theme, setTheme] = useState('dark')
 
   return (
     <div className="App" id={theme}>
-      <Header 
-      theme={theme}/>
+      <Header />
       <Main />
-      <About 
-      theme={theme}/>
-      <Projects 
-      theme={theme}/>
-      <Footer 
-      theme={theme}/>
+      <About />
+      <Projects />
+      <Footer />
     </div>
   );
 }
