@@ -93,12 +93,12 @@ a {
   color: #DCDCDC;
 } /* Need to create a class to make this easier to understand */
 
-#dark .nav-list-items:hover {
+.nav-list-items:hover {
   color: #222222;
   background: #DCDCDC;
 }
 
-#dark .card-link {
+.card-link {
   background: #222222;
 }
 
@@ -164,7 +164,8 @@ a {
 /* About */
 
 .about, 
-.projects {
+.projects,
+.footer {
   padding: 3em;
 }
 
@@ -262,6 +263,14 @@ a {
   object-fit: cover;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+/* Footer */
+
+.footer-icon {
+  height: 50px;
+  margin: auto;
+  display: block;
 }
 
 

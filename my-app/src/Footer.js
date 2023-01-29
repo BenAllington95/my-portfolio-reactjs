@@ -1,7 +1,9 @@
+import linkedInLogo from "./images/linkedin-icon-18-256.png";
+
 function Footer() {
     return (
       <div className="footer" id="footer">
-        <h1>Footer</h1>
+        <img src={linkedInLogo} className="footer-icon" alt="linkedin-logo" />
       </div>
     );
   }
