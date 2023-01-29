@@ -70,18 +70,14 @@ a {
 .about,
 .header,
 .header-top,
-.footer {
+.footer,
+.card {
   background: #181818;
 }
 
 .projects {
   background: #222222;
 }
-
-.card {
-  background: #181818;
-}
-
 
 
 .about,
@@ -243,7 +239,6 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
   height: 40%;
 }
 
@@ -420,6 +415,10 @@ a {
   .card {
     max-width: 250px;
     height: 250px;
+  }
+
+  .card-box-text {
+    padding: 1em;
   }
 
 }
