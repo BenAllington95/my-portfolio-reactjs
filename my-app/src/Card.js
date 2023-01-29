@@ -1,6 +1,6 @@
 export default function Card(props) {
     return (
-        <>
+        
         <a href={props.siteUrl} className="card" target="_blank" rel="noreferrer">
             <div className="card-box-text">
                 <h3 className="card-title">{props.title}</h3>
@@ -11,6 +11,5 @@ export default function Card(props) {
             </div>
             <img className="card-img" src={props.url} alt={props.title}/>
         </a>
-        </>
     )
 }
