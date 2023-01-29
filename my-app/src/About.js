@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, ScrollAnimate } from 'react';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
+
 
 function About(props) {
 
@@ -16,5 +18,6 @@ function About(props) {
       </div>
     );
   }
+
     
   export default About;

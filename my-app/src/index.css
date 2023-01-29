@@ -249,7 +249,7 @@ a {
 .card-title {
   text-align: center;
   line-height: 0;
-  margin-bottom: 1.25em;
+  margin-bottom: 1.25em
 }
 
 .card-links {
@@ -349,19 +349,15 @@ a {
     padding: 3em;
   }
 
-  .project-cards {
-    flex-direction: row;
-    flex-wrap: wrap;
+  .fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
   }
 
-  .card {
-    min-width: 40%;
+  .fade-in.appear {
+    opacity: 1;
   }
 
-  .card-links {
-    flex-direction: row;
-    padding: 0 .5em; 
-  }
 
   .nav-list {
     display: flex;
@@ -411,12 +407,23 @@ a {
   }
 
   /* Projects */
-  
-  .card {
-    max-width: 250px;
-    height: 250px;
+
+  .project-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
+  .card {
+    max-width: 35%;
+    height: 300px;
+  }
+
+  .card-links {
+    flex-direction: row;
+    padding: 0 .5em; 
+  }
+
+  
   .card-box-text {
     padding: 1em;
   }
