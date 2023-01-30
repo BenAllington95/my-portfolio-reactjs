@@ -16,6 +16,22 @@ body {
   font-family: 'Inter';
 }
 
+.hamburger-nav {
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  position: absolute;
+  background: #222222;
+  transform: translateX(-100%);
+  transition: all .4s ease-in-out;
+}
+
+.active-nav {
+  transform: translateX(0%)
+}
+
 h2, 
 li,
 p,
@@ -429,6 +445,10 @@ a {
     margin: 0 auto;
   } 
   
+}
+
+.light {
+  background: #DCDCDC;
 }
 
 
