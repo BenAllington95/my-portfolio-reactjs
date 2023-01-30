@@ -33,10 +33,10 @@ function App() {
         <div className={`hamburger-nav ${navDisplay ? "active-nav" : ""}`}>
         <img className="hamburger-close-icon" style={styles} src={closeIcon} onClick={toggleNavDisplay} alt="hamburger-icon"/>
         <ul className="hamburger-list">
-          <a href="#header"><li className="hamburger-list-items"><ion-icon name="home-sharp"></ion-icon></li></a>
-          <a href="#about"><li className="hamburger-list-items">About</li></a>
-          <a href="#projects"><li className="hamburger-list-items">Projects</li></a>
-          <a href="#footer"><li className="hamburger-list-items">Contact</li></a>
+
+          <a href="#about"><div onClick={toggleNavDisplay}><li className="hamburger-list-items">About</li></div></a>
+          <a href="#projects"><div onClick={toggleNavDisplay}><li className="hamburger-list-items">Projects</li></div></a>
+          <a href="#footer"><div onClick={toggleNavDisplay}><li className="hamburger-list-items">Contact</li></div></a>
         </ul>
       </div>
 

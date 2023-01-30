@@ -141,7 +141,7 @@ a {
 /* Hamburger Navigation */
 
 .hamburger-nav {
-  width: 80%;
+  width: 100%;
   min-height: 100vh;
   top: 0;
   left: 0;
@@ -154,22 +154,20 @@ a {
 
 .hamburger-close-icon {
   position: fixed;
-  left: 18px;
-  top: 18px;
+  left: 1em;
+  top: 1em;
 }
 
 .active-nav {
-  transform: translateX(25%);
+  transform: translateX(0%);
 }
 
 
 .hamburger-list {
   list-style: none;
   padding: 1em 0;
-  margin: 0;
   text-align: center;
 }
-
 
 
 
@@ -187,7 +185,7 @@ a {
 
 .nav-list-items,
 .hamburger-list-items {
-  padding: 1em 0;
+  padding: 2em 0;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
