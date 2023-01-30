@@ -10,26 +10,12 @@ html {
 
 /* Old yellow E2CF00 */
 
+
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Inter';
-}
-
-.hamburger-nav {
-  width: 100%;
-  min-height: 100vh;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  position: absolute;
-  background: #222222;
-  transform: translateX(-100%);
-  transition: all .4s ease-in-out;
-}
-
-.active-nav {
-  transform: translateX(0%)
 }
 
 h2, 
@@ -95,7 +81,6 @@ a {
   background: #222222;
 }
 
-
 .about,
 .header,
 .header-top,
@@ -109,7 +94,8 @@ a {
 .sub-heading,
 .about-text, 
 .sub-heading,
-.footer-text {
+.footer-text,
+.hamburger-list-items {
   color: #DCDCDC;
 } /* Need to create a class to make this easier to understand */
 
@@ -126,6 +112,10 @@ a {
   color: #E2CF00;
 }
 
+
+
+
+
 /* Header */
 
 .header-top {
@@ -135,7 +125,8 @@ a {
   padding: 1em;
 }
 
-.hamburger-icon {
+.hamburger-icon, 
+.hamburger-close-icon {
   width: 40px;
   cursor: pointer;
   background:#DCDCDC;
@@ -146,20 +137,66 @@ a {
   font-size: 1.5rem;
 }
 
-/* Navigation */
 
-.nav-list {
+/* Hamburger Navigation */
+
+.hamburger-nav {
+  width: 80%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  position: fixed;
+  background: #222222;
+  transform: translateX(150%);
+  transition: all .4s ease-in-out;
+}
+
+.hamburger-close-icon {
+  position: fixed;
+  left: 18px;
+  top: 18px;
+}
+
+.active-nav {
+  transform: translateX(25%);
+}
+
+
+.hamburger-list {
+  list-style: none;
   padding: 1em 0;
   margin: 0;
   text-align: center;
 }
 
-.nav-list-items {
+
+
+
+
+/* Navigation */
+
+
+
+.nav-list {
+  padding: 1em 0;
+  margin: 0;
+  text-align: center;
+  display: none;
+}
+
+.nav-list-items,
+.hamburger-list-items {
   padding: 1em 0;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
 }
+
+
+
+
+
 
 /* Main */
 
@@ -183,6 +220,10 @@ a {
   letter-spacing: 3px;
   text-transform: uppercase;
 }
+
+
+
+
 
 
 /* About */
@@ -345,6 +386,10 @@ a {
 
 @media (min-width: 700px) {
 
+  .hamburger-nav {
+    display: none;
+  }
+
   h1 {
     font-size: 5rem;
   }
@@ -357,9 +402,9 @@ a {
     font-size: 1.25rem;
   }
 
-  /* .hamburger-icon {
+  .hamburger-icon {
     display: none;
-  }   */
+  }  
 
   .about, .projects {
     padding: 3em;
@@ -373,7 +418,8 @@ a {
     padding: 0;
   }
 
-  .nav-list-items {
+  .nav-list-items, 
+  .hamburger-list-items {
     list-style-type: none;
     margin-left: 0.75em;
     padding: 0.5em 0.75em;
