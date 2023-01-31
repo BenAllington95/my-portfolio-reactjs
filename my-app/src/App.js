@@ -10,7 +10,7 @@ import closeIcon from "./images/close-sharp.svg";
 
 function App() {
 
-  const [navDisplay, setNavDisplay] = useState(true)
+  const [navDisplay, setNavDisplay] = useState(false)
   const styles = {
     backgroundColor: navDisplay ? "#E2CF00" : "#DCDCDC"
   }
