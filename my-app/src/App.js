@@ -12,7 +12,7 @@ function App() {
 
   const [navDisplay, setNavDisplay] = useState(true)
   const styles = {
-    backgroundColor: navDisplay ? "#FFD56F" : "#DCDCDC"
+    backgroundColor: navDisplay ? "#E2CF00" : "#DCDCDC"
   }
 
   function scrollLock() {
