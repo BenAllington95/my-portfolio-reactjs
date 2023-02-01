@@ -153,7 +153,12 @@ a {
 }
 
 #app-light .card-link {
-  background: #DCDCDC;
+  background: #b4b4b4;
+  transition: all 0.1s ease-in;
+}
+
+#app-light .card-link:hover {
+  filter: brightness(90%)
 }
 
 #app-light .hamburger-nav {
@@ -162,6 +167,10 @@ a {
 
 #app-light .hamburger-icon {
   background: #E2CF00;
+}
+
+#app-light .footer-list-items {
+  color: #222222;
 }
 
 
@@ -216,8 +225,8 @@ a {
 
 .hamburger-close-icon {
   position: fixed;
-  left: 1em;
-  top: 1em;
+  right: 20px;
+  top: 20px;
 }
 
 .active-nav {
@@ -277,10 +286,6 @@ a {
   letter-spacing: 3px;
   text-transform: uppercase;
 }
-
-
-
-
 
 
 /* About */
@@ -549,5 +554,6 @@ a {
   } 
   
 }
+
 
 
