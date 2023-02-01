@@ -42,7 +42,7 @@ function App() {
             <a href="#about"><li className="nav-list-items">About</li></a>
             <a href="#projects"><li className="nav-list-items">Projects</li></a>
             <a href="#footer"><li className="nav-list-items">Contact</li></a>
-            <li onClick={toggleTheme} className="nav-list-items"><ion-icon name="moon-sharp"></ion-icon></li>
+            <li onClick={toggleTheme} className="nav-list-items"><ion-icon name={theme ? "moon-sharp" : "sunny-sharp"}></ion-icon></li>
         </ul>
         </div>
         <div className={`hamburger-nav ${navDisplay ? "active-nav" : ""}`}>
@@ -54,7 +54,7 @@ function App() {
           <a href="#about"><div onClick={toggleNavDisplay}><li className="hamburger-list-items">About</li></div></a>
           <a href="#projects"><div onClick={toggleNavDisplay}><li className="hamburger-list-items">Projects</li></div></a>
           <a href="#footer"><div onClick={toggleNavDisplay}><li className="hamburger-list-items">Contact</li></div></a>
-          <li onClick={toggleTheme} className="nav-list-items"><ion-icon name="moon-sharp"></ion-icon></li>
+          <li onClick={toggleTheme} className="nav-list-items"><ion-icon name={theme ? "moon-sharp" : "sunny-sharp"}></ion-icon></li>
         </ul>
       </div>
 

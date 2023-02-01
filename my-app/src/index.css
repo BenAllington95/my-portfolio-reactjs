@@ -101,6 +101,7 @@ a {
 .footer-text,
 .hamburger-list-items {
   color: #DCDCDC;
+  transition: all .2s ease-in-out;
 } /* Need to create a class to make this easier to understand */
 
 .nav-list-items:hover {
