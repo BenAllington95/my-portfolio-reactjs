@@ -113,7 +113,16 @@ a {
 }
 
 
+/* Light Mode */
 
+#light > 
+.about,
+.header,
+.header-top,
+.footer,
+.card {
+  background: #DCDCDC;
+}
 
 
 /* Header */
@@ -170,10 +179,7 @@ a {
 }
 
 
-
-
 /* Navigation */
-
 
 
 .nav-list {

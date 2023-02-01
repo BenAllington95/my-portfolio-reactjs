@@ -11,6 +11,7 @@ import closeIcon from "./images/close-sharp.svg";
 function App() {
 
   const [navDisplay, setNavDisplay] = useState(false)
+  const [theme, setTheme] = useState(true)
   const styles = {
     backgroundColor: navDisplay ? "#E2CF00" : "#DCDCDC"
   }
@@ -24,27 +25,40 @@ function App() {
     scrollLock()
   }
 
+  function toggleTheme() {
+    setTheme(prevTheme => !prevTheme)
+  }
+
+console.log(theme)
+
   return (
-    <div className="App">
+    <div className="App" id="dark">
       <div className="header-top">
             <h2 className="header-title">ben.<span className="white-text">allington</span></h2>
             <img className="hamburger-icon" style={styles} src={hamburgerIcon} onClick={toggleNavDisplay} alt="hamburger-icon"/>
+            <ul className="nav-list">
+            <a href="#header"><li className="nav-list-items"><ion-icon name="home-sharp"></ion-icon></li></a>
+            <a href="#about"><li className="nav-list-items">About</li></a>
+            <a href="#projects"><li className="nav-list-items">Projects</li></a>
+            <a href="#footer"><li className="nav-list-items">Contact</li></a>
+            <li onClick={toggleTheme} className="nav-list-items"><ion-icon name="moon-sharp"></ion-icon></li>
+        </ul>
         </div>
         <div className={`hamburger-nav ${navDisplay ? "active-nav" : ""}`}>
         <img className="hamburger-close-icon" style={styles} src={closeIcon} onClick={toggleNavDisplay} alt="hamburger-icon"/>
         <ul className="hamburger-list">
-
           <a href="#about"><div onClick={toggleNavDisplay}><li className="hamburger-list-items">About</li></div></a>
           <a href="#projects"><div onClick={toggleNavDisplay}><li className="hamburger-list-items">Projects</li></div></a>
           <a href="#footer"><div onClick={toggleNavDisplay}><li className="hamburger-list-items">Contact</li></div></a>
+          <li onClick={toggleTheme} className="nav-list-items"><ion-icon name="moon-sharp"></ion-icon></li>
         </ul>
       </div>
 
-      <Header />
       <Main />
       <About />
       <Projects />
       <Footer />
+
     </div>
   );
 }
