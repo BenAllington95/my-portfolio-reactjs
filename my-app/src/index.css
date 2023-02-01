@@ -16,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter';
+  overflow: auto;
 }
 
 h2, 
@@ -67,18 +68,20 @@ a {
   font-style: italic;
 }
 
-/* Dark Mode */
+/* Colors */
 
 .about,
 .header,
 .header-top,
 .footer,
 .card {
+  transition: all .2s ease-in-out;
   background: #181818;
 }
 
 .projects {
   background: #222222;
+  transition: all .2s ease-in-out;
 }
 
 .about,
@@ -112,17 +115,57 @@ a {
   color: #E2CF00;
 }
 
-
 /* Light Mode */
 
-#light > 
-.about,
-.header,
-.header-top,
-.footer,
-.card {
+#app-light .about,
+#app-light .header,
+#app-light .header-top,
+#app-light .footer,
+#app-light .card {
   background: #DCDCDC;
 }
+
+#app-light .projects {
+  background: #b4b4b4;
+}
+
+#app-light .about,
+#app-light .header,
+#app-light .header-top,
+#app-light .nav-list,
+#app-light .nav-list-items,
+#app-light .card-title,
+#app-light .card-link,
+#app-light .nav-list,
+#app-light .card-title,
+#app-light .card-link,
+#app-light .sub-heading,
+#app-light .about-text, 
+#app-light .sub-heading,
+#app-light .footer-text,
+#app-light .hamburger-list-items {
+  color: #222222;
+}
+
+#app-light .nav-list-items:hover {
+  color: #DCDCDC;
+  background: #222222;
+}
+
+#app-light .card-link {
+  background: #DCDCDC;
+}
+
+#app-light .hamburger-nav {
+  background: #b4b4b4;
+}
+
+#app-light .hamburger-icon {
+  background: #E2CF00;
+}
+
+
+
 
 
 /* Header */
@@ -134,11 +177,21 @@ a {
   padding: 1em;
 }
 
+.hamburger-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  margin: 0;
+}
+
 .hamburger-icon, 
 .hamburger-close-icon {
-  width: 40px;
+  font-size: 2.25rem;
+  padding: 0.1em;
   cursor: pointer;
-  background:#DCDCDC;
+  background: #E2CF00;
+  color:#222222;
   border-radius: 7px;
 }
 
@@ -495,10 +548,6 @@ a {
     margin: 0 auto;
   } 
   
-}
-
-.light {
-  background: #DCDCDC;
 }
 
 

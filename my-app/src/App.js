@@ -12,9 +12,7 @@ function App() {
 
   const [navDisplay, setNavDisplay] = useState(false)
   const [theme, setTheme] = useState(true)
-  const styles = {
-    backgroundColor: navDisplay ? "#E2CF00" : "#DCDCDC"
-  }
+  
 
   function scrollLock() {
     return navDisplay ? document.body.style.overflow = "auto" : document.body.style.overflow = "hidden"
@@ -29,13 +27,16 @@ function App() {
     setTheme(prevTheme => !prevTheme)
   }
 
-console.log(theme)
+
 
   return (
-    <div className="App" id="dark">
+    <div className="App" id={theme ? "" : "app-light"}>
       <div className="header-top">
             <h2 className="header-title">ben.<span className="white-text">allington</span></h2>
-            <img className="hamburger-icon" style={styles} src={hamburgerIcon} onClick={toggleNavDisplay} alt="hamburger-icon"/>
+            <div className="hamburger-icon-container">
+              <span className="hamburger-icon"><ion-icon onClick={toggleNavDisplay} name="reorder-three-outline"></ion-icon></span>
+            </div>
+            {/* <img className="hamburger-icon" src={hamburgerIcon} onClick={toggleNavDisplay} alt="hamburger-icon"/> */}
             <ul className="nav-list">
             <a href="#header"><li className="nav-list-items"><ion-icon name="home-sharp"></ion-icon></li></a>
             <a href="#about"><li className="nav-list-items">About</li></a>
@@ -45,7 +46,10 @@ console.log(theme)
         </ul>
         </div>
         <div className={`hamburger-nav ${navDisplay ? "active-nav" : ""}`}>
-        <img className="hamburger-close-icon" style={styles} src={closeIcon} onClick={toggleNavDisplay} alt="hamburger-icon"/>
+        {/* <img className="hamburger-close-icon" src={closeIcon} onClick={toggleNavDisplay} alt="hamburger-icon"/> */}
+        <div className="hamburger-icon-container">
+              <span className="hamburger-close-icon"><ion-icon onClick={toggleNavDisplay} name="close-sharp"></ion-icon></span>
+            </div>
         <ul className="hamburger-list">
           <a href="#about"><div onClick={toggleNavDisplay}><li className="hamburger-list-items">About</li></div></a>
           <a href="#projects"><div onClick={toggleNavDisplay}><li className="hamburger-list-items">Projects</li></div></a>
