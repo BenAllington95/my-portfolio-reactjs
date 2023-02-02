@@ -85,6 +85,13 @@ a {
   transition: all .2s ease-in-out;
 }
 
+.main-heading,
+.main-subheading {
+  color: #E2CF00;
+  text-shadow: #181818 0px 3px 0px;
+  
+}
+
 .about,
 .header,
 .header-top,
@@ -129,6 +136,10 @@ a {
 
 #app-light .projects {
   background: #b4b4b4;
+}
+
+#app-light .card {
+  border-bottom: 5px solid #181818;
 }
 
 #app-light .about,
@@ -188,6 +199,11 @@ a {
   padding: 1em;
 }
 
+.header-title {
+  font-size: 1.3rem;
+}
+
+
 .hamburger-icon-container {
   display: flex;
   align-items: center;
@@ -204,10 +220,6 @@ a {
   background: #E2CF00;
   color:#222222;
   border-radius: 7px;
-}
-
-.header-title {
-  font-size: 1.5rem;
 }
 
 
@@ -295,7 +307,7 @@ a {
 .about, 
 .projects,
 .footer {
-  padding: 3em;
+  padding: 1.5em;
 }
 
 .sub-heading {
@@ -305,6 +317,9 @@ a {
 .about-text {
   margin-bottom: 1em;
   line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-img {
@@ -344,6 +359,7 @@ a {
 
 .card {
   width: 100%;
+  max-width: 300px;
   height: 400px;
   border-radius: 10px;
   transition: filter 0.3s;
@@ -351,6 +367,7 @@ a {
   flex-direction: column;
   cursor: pointer;
   display: inline-block;
+  border-bottom: 5px solid #303030;
 }
 
 .card-img {
@@ -359,11 +376,11 @@ a {
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  display: block;
 }
 
 .card-box-text {
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   height: 50%;
@@ -375,8 +392,9 @@ a {
 
 .card-title {
   text-align: center;
-  margin-bottom: 0.7em;
+  margin-bottom: 10px;
   word-wrap: break-word;
+  font-size: 1.25rem;
 }
 
 .card-links {
@@ -448,6 +466,13 @@ a {
 
 /* Media Queries */
 
+
+@media (min-width: 450px) {
+  .about, .projects {
+    padding: 3em;
+  }
+}
+
 @media (min-width: 700px) {
 
   .hamburger-nav {
@@ -506,6 +531,7 @@ a {
     color: #DCDCDC;
   }
 
+
   .footer-list {
     flex-direction: row;
     gap: 20px;
@@ -556,6 +582,3 @@ a {
   } 
   
 }
-
-
-
