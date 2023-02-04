@@ -110,6 +110,7 @@ a {
   background: #DCDCDC;
 }
 
+
 .card-link {
   background: #222222;
 }
@@ -148,6 +149,10 @@ a {
 #app-light .footer-text,
 #app-light .hamburger-list-items {
   color: #222222;
+}
+
+#app-light body {
+  background: #b4b4b4;
 }
 
 #app-light .nav-list-items:hover {
@@ -557,7 +562,7 @@ a {
   } 
 }
 
-/* 
+
 .reveal{
   position: relative;
   transform: translateY(150px);
@@ -567,5 +572,15 @@ a {
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
-} */
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
 
