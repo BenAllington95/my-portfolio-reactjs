@@ -560,7 +560,9 @@ a {
     width: 90%;
     margin: 0 auto;
   } 
+  
 }
+
 
 
 .reveal{
@@ -573,14 +575,3 @@ a {
   transform: translateY(0);
   opacity: 1;
 }
-
-.active.fade-bottom {
-  animation: fade-bottom 1s ease-in;
-}
-.active.fade-left {
-  animation: fade-left 1s ease-in;
-}
-.active.fade-right {
-  animation: fade-right 1s ease-in;
-}
-
