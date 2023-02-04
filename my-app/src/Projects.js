@@ -2,6 +2,8 @@
 import projectData from "./project-data";
 import Card from "./Card"
 
+import reveal from "./About"
+
 
 function Projects(props) {
 
