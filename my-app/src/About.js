@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 
 function About() {
     return (
-      <div className={`about reveal`} id="about">
+      <div className={`about`} id="about">
           <div className="container">
             <h2 className="sub-heading">about</h2>
             <img className="about-img" src={require("./images/profile-img.png")} />
@@ -18,4 +18,4 @@ function About() {
   }
 
     
-  export default {About , reveal};
+  export default About;
