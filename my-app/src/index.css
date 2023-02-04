@@ -557,8 +557,7 @@ a {
   } 
 }
 
-
-<<<<<<< HEAD
+/* 
 .reveal{
   position: relative;
   transform: translateY(150px);
@@ -568,7 +567,5 @@ a {
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
-}
-=======
+} */
 
->>>>>>> parent of b8dd778 (Updated card sizings, colour changes etc)
