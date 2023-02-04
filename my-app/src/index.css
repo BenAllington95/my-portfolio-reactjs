@@ -17,6 +17,7 @@ body {
   padding: 0;
   font-family: 'Inter';
   overflow: auto;
+  background:#181818;
 }
 
 
@@ -580,5 +581,16 @@ a {
     width: 90%;
     margin: 0 auto;
   } 
-  
+}
+
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
