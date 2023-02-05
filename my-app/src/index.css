@@ -17,7 +17,7 @@ body {
   padding: 0;
   font-family: 'Inter';
   overflow: auto;
-  background:#181818;
+  /* background:#181818; */
 }
 
 
@@ -291,7 +291,7 @@ a {
 
 .main-subheading {
   font-size: 1rem;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
 }
 
@@ -525,7 +525,7 @@ a {
 
   .main-subheading {
     font-size: 1.75rem;
-    letter-spacing: 4.2px;
+    letter-spacing: 3.5px;
   }
 
   /* Projects */
@@ -569,9 +569,13 @@ a {
   position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: 2s all ease;
+  transition: 1.5s all ease;
 }
 .reveal.active{
   transform: translateY(0);
   opacity: 1;
+}
+
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
 }
