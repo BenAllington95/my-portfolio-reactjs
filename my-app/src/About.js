@@ -5,7 +5,7 @@ function About() {
     return (
       <div className={`about`} id="about">
           <div className="container reveal">
-            <h2 className="sub-heading">about</h2>
+            <h2 className="sub-heading">About</h2>
             <img className="about-img" src={require("./images/profile-img.png")} />
             <p className="about-text">Hi, i'm Ben, a Front End Web Developer based in the UK.</p>
             <p className="about-text">I began to code in 2021 and started by learning HTML, CSS, Javascript, React and Git/Github. Since learning to code, I have always enjoyed the process of problem solving and the feeling of achievement when you manage to solve the outcome you were working towards.</p>

@@ -17,7 +17,7 @@ function Projects(props) {
     return (
       <div className={`projects`} id="projects">
         <div className="container reveal">
-          <h2 className="sub-heading">projects</h2>
+          <h2 className="sub-heading">Projects</h2>
           <div className="project-cards">
           {projectMap}
           </div>
