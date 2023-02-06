@@ -128,12 +128,15 @@ a {
 #app-light .about,
 #app-light .header,
 #app-light .header-top,
-#app-light .footer,
 #app-light .card {
   background: #e2e1e1;
 }
 
 #app-light .projects {
+  background: #d1d1d0;
+}
+
+#app-light .footer {
   background: #435251;
 }
 
@@ -155,13 +158,10 @@ a {
   color: #222222;
 }
 
-#app-light body {
-  background: #b4b4b4;
-}
 
 #app-light .nav-list-items:hover {
-  color: #DCDCDC;
-  background: #222222;
+  color: #e2e1e1;
+  background: #435251;
 }
 
 #app-light .card-link {
@@ -182,7 +182,16 @@ a {
 }
 
 #app-light .footer-list-items {
-  color: #222222;
+  color: #e2e1e1;
+}
+
+#app-light .main-subheading,
+#app-light .main-heading {
+  color: #435251;
+}
+
+#app-light .footer-text {
+  color: #b4b4b4;
 }
 
 
@@ -297,7 +306,12 @@ a {
 .main-subheading {
   font-size: 1rem;
   letter-spacing: 2px;
+  font-weight: bold;
   text-transform: uppercase;
+}
+
+.main-heading {
+  text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
 }
 
 
@@ -311,6 +325,7 @@ a {
 
 .sub-heading {
   text-align: center;
+  text-shadow: 4px 3px 0px rgba(0,0,0,0.2);
 }
 
 .about-text {
@@ -540,10 +555,11 @@ a {
   .project-cards {
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 40px;
   }
 
   .card {
-    max-width: 31%;
+    max-width: 35%;
     height: 250px;
   }
 
