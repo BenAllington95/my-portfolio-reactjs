@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="App" id={theme ? "" : "app-light"}>
       <div className="header-top">
-            <h2 className="header-title">Ben Allington</h2>
+            {/* <h2 className="header-title">Ben Allington</h2> */}
             <div className="hamburger-icon-container">
               <span className="hamburger-icon"><ion-icon onClick={toggleNavDisplay} name="reorder-three-outline"></ion-icon></span>
             </div>
