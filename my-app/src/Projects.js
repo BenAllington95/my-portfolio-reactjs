@@ -21,6 +21,7 @@ function Projects(props) {
           <div className="project-cards">
           {projectMap}
           </div>
+          <p>View More</p>
         </div>
       </div>
     );
