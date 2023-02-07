@@ -24,4 +24,9 @@ export default [
         url: require('./images/comments-img.png'),
         siteUrl: "https://benallington-commentsection.netlify.app"
     },
+    {
+        title: 'Portfolio Website',
+        url: require('./images/website-card-img.png'),
+        siteUrl: "#"
+    },
 ]
