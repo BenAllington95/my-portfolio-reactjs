@@ -1,12 +1,9 @@
-
-import Header from './Header';
 import Main from './Main';
 import About from './About';
 import Projects from './Projects';
 import Footer from './Footer';
 import React, { useState } from 'react';
-import hamburgerIcon from "./images/reorder-three-outline.svg";
-import closeIcon from "./images/close-sharp.svg";
+
 
 function App() {
 
@@ -36,7 +33,6 @@ function App() {
             <div className="hamburger-icon-container">
               <span className="hamburger-icon"><ion-icon onClick={toggleNavDisplay} name="reorder-three-outline"></ion-icon></span>
             </div>
-            {/* <img className="hamburger-icon" src={hamburgerIcon} onClick={toggleNavDisplay} alt="hamburger-icon"/> */}
             <ul className="nav-list">
             <a href="#header"><li className="nav-list-items"><ion-icon name="home-sharp"></ion-icon></li></a>
             <a href="#about"><li className="nav-list-items">About</li></a>
@@ -46,7 +42,6 @@ function App() {
         </ul>
         </div>
         <div className={`hamburger-nav ${navDisplay ? "active-nav" : ""}`}>
-        {/* <img className="hamburger-close-icon" src={closeIcon} onClick={toggleNavDisplay} alt="hamburger-icon"/> */}
         <div className="hamburger-icon-container">
               <span className="hamburger-close-icon"><ion-icon onClick={toggleNavDisplay} name="close-sharp"></ion-icon></span>
             </div>
