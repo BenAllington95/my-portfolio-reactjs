@@ -3,7 +3,7 @@ import projectData from "./project-data";
 import Card from "./Card"
 
 
-function Projects(props) {
+function Projects() {
 
   const projectMap = projectData.map(function(proj) {
     return (
@@ -13,6 +13,8 @@ function Projects(props) {
         />
     )
   })
+
+
    
     return (
       <div className={`projects`} id="projects">
@@ -21,11 +23,12 @@ function Projects(props) {
           <div className="project-cards">
           {projectMap}
           </div>
-          <p>View More</p>
         </div>
       </div>
     );
   }
+
+  
 
   function reveal() {
     var reveals = document.querySelectorAll(".reveal");

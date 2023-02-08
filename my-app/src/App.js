@@ -8,7 +8,7 @@ import React, { useState } from 'react';
 function App() {
 
   const [navDisplay, setNavDisplay] = useState(false)
-  const [theme, setTheme] = useState(true)
+  const [theme, setTheme] = useState(false)
   
 
   function scrollLock() {

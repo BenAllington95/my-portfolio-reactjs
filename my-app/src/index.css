@@ -59,14 +59,10 @@ a {
 }
 
 .white-text {
-  color: #DCDCDC;
+  color: #d1d1d0;
 }
 
-.yellow-text {
-  color: #E2CF00;
-}
-
-.yellow-text:hover {
+.accent-text {
   color: #E2CF00;
 }
 
@@ -82,13 +78,14 @@ a {
 .footer,
 .card {
   transition: all .2s ease-in-out;
-  background: #181818;
+  background: #191919;
 }
 
 .projects {
-  background: #222222;
+  background: #202020;
   transition: all .2s ease-in-out;
 }
+
 
 .about,
 .header,
@@ -106,17 +103,17 @@ a {
 .footer-text,
 .hamburger-list-items,
 .hamburger-close-icon {
-  color: #e2e1e1;
+  color: #d1d1d0;
   transition: all .2s ease-in-out;
 } /* Need to create a class to make this easier to understand */
 
 .nav-list-items:hover {
-  color: #222222;
-  background: #e2e1e1;
+  color: #202020;
+  background: #d1d1d0;
 }
 
 .card-link {
-  background: #222222;
+  background: #202020;
 }
 
 .sub-heading {
@@ -155,7 +152,12 @@ a {
 #app-light .sub-heading,
 #app-light .footer-text,
 #app-light .hamburger-list-items {
-  color: #222222;
+  color: #202020;
+}
+
+#app-light .accent-text {
+  color: #435251;
+  font-weight: bold;
 }
 
 #app-light .header-title,
@@ -164,18 +166,11 @@ a {
 }
 
 #app-light .nav-list-items:hover {
-  color: #e2e1e1;
+  color: #d1d1d0;
   background: #435251;
 }
 
-#app-light .card-link {
-  background: #b4b4b4;
-  transition: all 0.1s ease-in;
-}
 
-#app-light .card-link:hover {
-  filter: brightness(90%)
-}
 
 #app-light .hamburger-nav {
   background: #d1d1d0;
@@ -183,12 +178,11 @@ a {
 
 #app-light .hamburger-icon, 
 #app-light .hamburger-close-icon {
-  /* background: #435251; */
   color:#435251;
 }
 
 #app-light .footer-list-items {
-  color: #e2e1e1;
+  color: #d1d1d0;
 }
 
 #app-light .main-subheading,
@@ -198,15 +192,18 @@ a {
 
 
 #app-light .footer-text {
-  color: #b4b4b4;
+  color: #d1d1d0;
 }
 
 #app-light .card-link {
   background: #435251;
   color: #d1d1d0;
+  transition: all 0.1s ease-in;
 }
 
-
+#app-light .card-link:hover {
+  filter: brightness(90%)
+}
 
 #app-light .sub-heading {
   color:#435251;
@@ -266,7 +263,6 @@ a {
 .active-nav {
   transform: translateX(0%);
 }
-
 
 .hamburger-list {
   list-style: none;
@@ -328,11 +324,18 @@ a {
   text-transform: uppercase;
   color: #E2CF00;
   text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+  animation: fadein 1s
 }
 
 .main-heading {
   text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
   color: #E2CF00;
+  animation: fadein 1s
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 
