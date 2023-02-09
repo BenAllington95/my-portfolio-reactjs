@@ -59,7 +59,7 @@ a {
 }
 
 .white-text {
-  color: #d1d1d0;
+  color: #ffffff;
 }
 
 .accent-text {
@@ -90,6 +90,7 @@ a {
 }
 
 
+
 .about,
 .header,
 .header-top,
@@ -106,7 +107,7 @@ a {
 .footer-text,
 .hamburger-list-items,
 .hamburger-close-icon {
-  color: #d1d1d0;
+  color: #ffffff;
   transition: all .2s ease-in-out;
 } /* Need to create a class to make this easier to understand */
 
@@ -127,7 +128,7 @@ a {
 #app-light .header,
 #app-light .header-top,
 #app-light .card {
-  background: #e2e1e1;
+  background: #ffffff;
 }
 
 #app-light .projects {
@@ -135,13 +136,12 @@ a {
 }
 
 #app-light .projects .sub-heading {
-  color: #e2e1e1;
+  color: #ffffff;
 }
 
 
-
 #app-light .footer {
-  background: #e2e1e1;
+  background: #ffffff;
 }
 
 
@@ -159,7 +159,7 @@ a {
 #app-light .sub-heading,
 #app-light .footer-text,
 #app-light .hamburger-list-items {
-  color: #202020;
+  color: #4d4d4d;
 }
 
 #app-light .accent-text {
@@ -173,7 +173,7 @@ a {
 }
 
 #app-light .nav-list-items:hover {
-  color: #d1d1d0;
+  color: #ffffff;
   background: #435251;
 }
 
@@ -187,7 +187,7 @@ a {
 }
 
 #app-light .footer-list-items {
-  color: #d1d1d0;
+  color: #435251;
 }
 
 #app-light .main-subheading,
@@ -197,12 +197,12 @@ a {
 
 
 #app-light .footer-text {
-  color: #d1d1d0;
+  color: #435251;
 }
 
 #app-light .card-link {
-  background: #d1d1d0;
-  color: #202020;
+  background: #435251;
+  color: #ffffff;
   transition: all 0.1s ease-in;
 }
 
@@ -254,7 +254,7 @@ a {
   left: 0;
   z-index: 999;
   position: fixed;
-  background: #222222;
+  background: #202020;
   transform: translateX(150%);
   transition: all .4s ease-in-out;
 }
@@ -329,7 +329,7 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   color: #E2CF00;
-  text-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
   animation: fadein 1s
 }
 
@@ -361,7 +361,7 @@ a {
 
 .about-text {
   margin-bottom: 1em;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .about-img {
@@ -410,7 +410,7 @@ a {
   width: 100%;
   max-width: 400px;
   height: 350px;
-  border-radius: 10px;
+  border-radius: 15px;
   transition: filter 0.3s;
   flex-direction: column;
   cursor: pointer;
@@ -421,8 +421,8 @@ a {
   width: 100%;
   height: 55%;
   object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
 }
 
 .card-box-text {
@@ -561,7 +561,7 @@ a {
   .nav-list-items:hover, 
   .nav-list-items:focus {
     background: #E2CF00;
-    color: #181818;
+    color: #202020;
   }
 
   .header {
@@ -569,8 +569,8 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 0em 3em;
-    background: #181818;
-    color: #DCDCDC;
+    background: #202020;
+    color: #e2e1e1;
   }
 
   .footer-list {
