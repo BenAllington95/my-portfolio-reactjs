@@ -76,14 +76,17 @@ a {
 .header,
 .header-top,
 .footer,
-.card {
+.projects {
   transition: all .2s ease-in-out;
-  background: #191919;
+  background: #222222;
 }
 
-.projects {
+.card {
   background: #202020;
-  transition: all .2s ease-in-out;
+}
+
+.card-link {
+  background: #222222;
 }
 
 
@@ -112,9 +115,7 @@ a {
   background: #d1d1d0;
 }
 
-.card-link {
-  background: #202020;
-}
+
 
 .sub-heading {
   color: #E2CF00;
@@ -130,11 +131,17 @@ a {
 }
 
 #app-light .projects {
-  background: #d1d1d0;
+  background: #435251;
 }
 
+#app-light .projects .sub-heading {
+  color: #e2e1e1;
+}
+
+
+
 #app-light .footer {
-  background: #435251;
+  background: #e2e1e1;
 }
 
 
@@ -170,8 +177,6 @@ a {
   background: #435251;
 }
 
-
-
 #app-light .hamburger-nav {
   background: #d1d1d0;
 }
@@ -196,8 +201,8 @@ a {
 }
 
 #app-light .card-link {
-  background: #435251;
-  color: #d1d1d0;
+  background: #d1d1d0;
+  color: #202020;
   transition: all 0.1s ease-in;
 }
 
@@ -268,6 +273,7 @@ a {
   list-style: none;
   padding: 1em 0;
   text-align: center;
+  margin-top: 4em;
 }
 
 
@@ -347,6 +353,7 @@ a {
   padding: 3em;
 }
 
+
 .sub-heading {
   text-align: center;
   text-shadow: 4px 3px 0px rgba(0,0,0,0.2);
@@ -381,6 +388,11 @@ a {
 
 /* Projects */
 
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
 
 .project-cards {
   display: flex;
@@ -394,14 +406,15 @@ a {
 
 
 .card {
+  display: flex;
   width: 100%;
-  max-width: 300px;
-  height: 300px;
+  max-width: 400px;
+  height: 350px;
   border-radius: 10px;
   transition: filter 0.3s;
-  display: flex;
   flex-direction: column;
   cursor: pointer;
+
 }
 
 .card-img {
@@ -428,6 +441,8 @@ a {
   text-align: center;
   margin-bottom: 0.7em;
   word-wrap: break-word;
+  font-size: 1.125rem;
+  padding: 0 1em; 
 }
 
 .card-links {
@@ -452,10 +467,6 @@ a {
 .card-link:hover {
   filter: brightness(120%)
 }
-
-
-
-
 
 
 
@@ -582,12 +593,11 @@ a {
 
   .project-cards {
     flex-direction: row;
-    flex-wrap: wrap;
-    gap: 40px;
+    gap: 20px;
   }
 
   .card {
-    max-width: 30%;
+    width: 40%;
     height: 250px;
   }
 
@@ -611,7 +621,7 @@ a {
 @media (min-width: 900px) {
 
   .container {
-    max-width: 800px;
+    max-width: 900px;
     width: 90%;
     margin: 0 auto;
   } 
@@ -635,3 +645,4 @@ a {
 .active.fade-bottom {
   animation: fade-bottom 1s ease-in;
 }
+

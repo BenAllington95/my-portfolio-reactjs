@@ -50,6 +50,10 @@ function App() {
           <a href="#projects"><div onClick={toggleNavDisplay}><li className="hamburger-list-items">Projects</li></div></a>
           <a href="#footer"><div onClick={toggleNavDisplay}><li className="hamburger-list-items">Contact</li></div></a>
           <li onClick={toggleTheme} className="nav-list-items"><ion-icon name={theme ? "moon-sharp" : "sunny-sharp"}></ion-icon></li>
+          <a href="mailto: benallington1995@gmail.com"><li className="hamburger-list-items"><ion-icon name="mail-sharp"></ion-icon></li></a>
+          <a href="https://www.linkedin.com/in/ben-allington" target="_blank" rel="noreferrer"><li className="hamburger-list-items"><ion-icon name="logo-linkedin"></ion-icon></li></a>
+          <a href="https://www.github.com/BenAllington95" target="_blank" rel="noreferrer"><li className="hamburger-list-items"><ion-icon name="logo-github"></ion-icon></li></a>
+          <a href="https://discordapp.com/users/Ben#0462" target="_blank" rel="noreferrer"><li className="hamburger-list-items"><ion-icon name="logo-discord"></ion-icon></li></a>
         </ul>
       </div>
 
