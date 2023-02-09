@@ -116,8 +116,6 @@ a {
   background: #d1d1d0;
 }
 
-
-
 .sub-heading {
   color: #E2CF00;
 }
@@ -250,6 +248,7 @@ a {
 .hamburger-nav {
   width: 100%;
   min-height: 100vh;
+  height: 100%;
   top: 0;
   left: 0;
   z-index: 999;
@@ -271,9 +270,11 @@ a {
 
 .hamburger-list {
   list-style: none;
-  padding: 1em 0;
+  padding: 0;
   text-align: center;
-  margin-top: 4em;
+  display: grid;
+  place-content: center;
+  height: 100%;
 }
 
 
@@ -282,14 +283,14 @@ a {
 
 .nav-list {
   padding: 1em 0;
-  margin: 0;
+  margin: 0 auto;
   text-align: center;
   display: none;
 }
 
 .nav-list-items,
 .hamburger-list-items {
-  padding: 2em 0;
+  padding: 1.5em 5em;
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
@@ -396,7 +397,7 @@ a {
 
 .project-cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
@@ -581,7 +582,7 @@ a {
   /* Main */
 
   .main {
-    min-height: 100vh;
+    min-height: 85vh;
   }
 
   .main-subheading {
@@ -597,7 +598,7 @@ a {
   }
 
   .card {
-    width: 40%;
+    width: 48%;
     height: 250px;
   }
 
@@ -621,7 +622,7 @@ a {
 @media (min-width: 900px) {
 
   .container {
-    max-width: 900px;
+    max-width: 700px;
     width: 90%;
     margin: 0 auto;
   } 
