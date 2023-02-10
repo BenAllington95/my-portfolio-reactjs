@@ -78,7 +78,7 @@ a {
 .footer,
 .header-top {
   transition: all .2s ease-in-out;
-  background: #202020;
+  background: #191919;
 }
 
 .card-link, .projects {
@@ -431,7 +431,7 @@ a {
 }
 
 .card:hover {
-  filter: brightness(120%);
+  filter: brightness(110%);
 }
 
 .card-title {
@@ -646,4 +646,6 @@ a {
 .active.fade-bottom {
   animation: fade-bottom 1s ease-in;
 }
+
+
 
