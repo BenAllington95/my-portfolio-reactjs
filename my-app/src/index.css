@@ -8,16 +8,17 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Old yellow E2CF00 */
-
-
-
 body {
   margin: 0;
   padding: 0;
   font-family: 'Inter';
   overflow: auto;
-  /* background:#181818; */
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 
@@ -76,13 +77,14 @@ a {
 .header,
 .card, 
 .footer,
-.header-top {
+.header-top,
+.projects {
   transition: all .2s ease-in-out;
-  background: #191919;
+  background: #171717;
 }
 
-.card-link, .projects {
-  background: #222222;
+.card-link, .card {
+  background: #202020;
 }
 
 
@@ -108,7 +110,7 @@ a {
 } /* Need to create a class to make this easier to understand */
 
 .nav-list-items:hover {
-  color: #202020;
+  color: #272727;
   background: #d1d1d0;
 }
 
@@ -121,92 +123,80 @@ a {
 #app-light .about,
 #app-light .header,
 #app-light .header-top,
-#app-light .card {
-  background: #ffffff;
-}
-
-#app-light .projects {
-  background: #435251;
-}
-
-#app-light .projects .sub-heading {
-  color: #ffffff;
-}
-
-
+#app-light .card, 
 #app-light .footer {
-  background: #ffffff;
+  background: #e9eded;
 }
 
+#app-light .projects,
+#app-light .card-link {
+  background: #5a6d6c;
+}
+
+#app-light .hamburger-nav {
+  background: #c0cbca;
+}
+
+#app-light .projects .sub-heading,
+#app-light .card-link {
+  color: #e9eded;
+}
+
+#app-light .card-link {
+  transition: all 0.1s ease-in;
+}
 
 #app-light .about,
 #app-light .header,
 #app-light .header-top,
 #app-light .nav-list,
 #app-light .nav-list-items,
-#app-light .card-title,
-#app-light .card-link,
 #app-light .nav-list,
 #app-light .card-title,
-#app-light .card-link,
 #app-light .about-text, 
 #app-light .sub-heading,
 #app-light .footer-text,
 #app-light .hamburger-list-items {
-  color: #4d4d4d;
+  color: #5a6d6c;
 }
 
-#app-light .accent-text {
-  color: #435251;
+#app-light .hamburger-icon, 
+#app-light .hamburger-close-icon,
+#app-light .footer-list-items,
+#app-light .main-subheading,
+#app-light .main-heading,
+#app-light .footer-text {
+  color:#435251;
+}
+
+#app-light .main-subheading {
+  color: #5a6d6c
+}
+
+.accent-text {
   font-weight: bold;
 }
 
 #app-light .header-title,
-#app-light .nav-list-items {
-  color:#435251
-}
-
-#app-light .nav-list-items:hover {
-  color: #ffffff;
-  background: #435251;
-}
-
-#app-light .hamburger-nav {
-  background: #d1d1d0;
-}
-
-#app-light .hamburger-icon, 
-#app-light .hamburger-close-icon {
-  color:#435251;
-}
-
-#app-light .footer-list-items {
-  color: #435251;
-}
-
-#app-light .main-subheading,
-#app-light .main-heading {
-  color: #435251;
+#app-light .nav-list-items,
+#app-light .accent-text,
+#app-light .sub-heading  {
+  color:#5a6d6c;
 }
 
 
-#app-light .footer-text {
-  color: #435251;
-}
-
-#app-light .card-link {
-  background: #435251;
-  color: #ffffff;
-  transition: all 0.1s ease-in;
-}
 
 #app-light .card-link:hover {
   filter: brightness(90%)
 }
 
-#app-light .sub-heading {
-  color:#435251;
+#app-light .nav-list-items:hover {
+  color: #e9eded;
+  background: #435251;
 }
+
+
+
 
 
 
@@ -232,7 +222,6 @@ a {
 .hamburger-close-icon {
   font-size: 2.25rem;
   padding: 0.1em;
-  cursor: pointer;
   border-radius: 7px;
 }
 
@@ -289,10 +278,16 @@ a {
   padding: 1.5em 5em;
   font-weight: bold;
   text-transform: uppercase;
-  cursor: pointer;
 }
 
 
+.nav-list-items,
+.hamburger-list-items,
+.card,
+.hamburger-icon, 
+.hamburger-close-icon  {
+  cursor: pointer;
+}
 
 
 
@@ -315,7 +310,7 @@ a {
 }
 
 #app-light .main {
-  background-image: url('./images/light-main-img.jpg');
+  background-image: url('./images/light-main-img.png');
   transition: all .2s ease-in-out;
 }
 
@@ -327,13 +322,16 @@ a {
   text-transform: uppercase;
   color: #E2CF00;
   text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
-  animation: fadein 1s
 }
 
 .main-heading {
   text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
   color: #E2CF00;
-  animation: fadein 1s
+}
+
+.main-subheading,
+.main-heading {
+  animation: fadein 1s;
 }
 
 @keyframes fadein {
@@ -362,8 +360,8 @@ a {
 }
 
 .about-img {
-  width: 250px;
-  height: 250px;
+  max-width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;
   filter: grayscale(0.3);
@@ -385,11 +383,6 @@ a {
 
 /* Projects */
 
-.container {
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-}
 
 .project-cards {
   display: flex;
@@ -523,7 +516,7 @@ a {
   }
 
   p {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
   }
 
   .hamburger-icon {
@@ -532,10 +525,6 @@ a {
 
   .about, .projects {
     padding: 3em;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .header-top {
