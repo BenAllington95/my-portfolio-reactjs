@@ -134,7 +134,8 @@ ion-icon[name=git-branch-outline] {
 }
 
 #app-light .skills,
-#app-light .card-link {
+#app-light .card-link,
+#app-light .footer {
   background: #5a6d6c;
 }
 
