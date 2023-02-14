@@ -5,6 +5,7 @@ export default function Card(props) {
             <img className="card-img" src={props.url} alt={props.title}/>
             <div className="card-box-text">
                 <h3 className="card-title">{props.title}</h3>
+                <p className="card-desc">{props.description}</p>
                 <div className="card-links">
                     <a href="www.google.com" className="card-link" target="_blank" rel="noreferrer">View Code</a>
                     <a href={props.siteUrl} className="card-link" target="_blank" rel="noreferrer">View Site</a>

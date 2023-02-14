@@ -2,6 +2,7 @@ export default [
     {
         title: 'Diner App',
         url: require('./images/diner-img.png'),
+        description: "A diner app specifically designed for mobile use using vanilla javascript",
         siteUrl: "https://bensdinerapp.netlify.app/"
     },
     {
