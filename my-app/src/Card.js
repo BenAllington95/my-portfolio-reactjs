@@ -7,8 +7,8 @@ export default function Card(props) {
                 <h3 className="card-title">{props.title}</h3>
                 <p className="card-desc">{props.description}</p>
                 <div className="card-links">
-                    <a href="www.google.com" className="card-link" target="_blank" rel="noreferrer">View Code</a>
                     <a href={props.siteUrl} className="card-link" target="_blank" rel="noreferrer">View Site</a>
+                    <a href="www.google.com" className="card-link" target="_blank" rel="noreferrer">View Code</a>
                 </div>
             </div>
         </a>

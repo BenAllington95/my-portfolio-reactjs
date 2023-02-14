@@ -79,7 +79,8 @@ a {
 .card, 
 .footer,
 .header-top,
-.projects {
+.projects, 
+.skills {
   transition: all .2s ease-in-out;
   background: #181818;
 }
@@ -97,13 +98,19 @@ a {
 .card-link,
 .nav-list,
 .card-title,
+.card-desc,
 .card-link,
 .sub-heading,
 .about-text, 
 .sub-heading,
 .footer-text,
 .hamburger-list-items,
-.hamburger-close-icon {
+.hamburger-close-icon, 
+ion-icon[name=logo-html5],
+ion-icon[name=logo-css3], 
+ion-icon[name=logo-javascript],
+ion-icon[name=logo-react],
+ion-icon[name=git-branch-outline] {
   color: #ffffff;
   transition: all .2s ease-in-out;
 } /* Need to create a class to make this easier to understand */
@@ -380,7 +387,17 @@ a {
   margin-bottom: 0;
 }
 
+
+
+
 /* Skills */
+
+.skills {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .skill-items {
   display: flex;
@@ -389,8 +406,6 @@ a {
   justify-content: space-between;
   margin-top: 2em;
 }
-
-
 
 ion-icon[name=logo-html5],
 ion-icon[name=logo-css3], 
@@ -455,10 +470,14 @@ ion-icon[name=git-branch-outline] {
 
 .card-title, .card-desc {
   text-align: center;
-  margin-bottom: 0.7em;
+  margin-bottom: 0.3em;
   word-wrap: break-word;
   font-size: 1.125rem;
   padding: 0 1em; 
+}
+
+.card-desc {
+  margin-bottom: 0.5em;
 }
 
 .card-links {
