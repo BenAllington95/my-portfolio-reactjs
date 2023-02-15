@@ -29,7 +29,6 @@ function Skills() {
                 <ion-icon name="git-branch-outline"></ion-icon>
               </div> 
             </div>
-            <Certificates />
         </div>
       </div>
     );

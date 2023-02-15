@@ -449,7 +449,7 @@ ion-icon[name=git-branch-outline] {
   border-radius: 10px;
   outline: solid 5px #c0cbca;
   outline-offset: -5px;
-  max-width: 100%;
+  max-width: 50%;
 }
 
 
