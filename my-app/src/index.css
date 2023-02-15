@@ -442,8 +442,28 @@ ion-icon[name=git-branch-outline] {
 
 
 
+/* Certificates */
+
+
+.certificate-img {
+  border-radius: 10px;
+  outline: solid 5px #c0cbca;
+  outline-offset: -5px;
+}
+
+
 /* Projects */
 
+#app-light .sub-sub-heading {
+  color: #5a6d6c;
+}
+
+
+.sub-sub-heading {
+  color: #ffffff;
+  margin-top: 1em;
+  font-size: 1.2rem;
+}
 
 .project-cards {
   display: flex;
@@ -742,5 +762,3 @@ ion-icon[name=git-branch-outline] {
   background: #202020;
   color: #ffffff;
 }
-
-

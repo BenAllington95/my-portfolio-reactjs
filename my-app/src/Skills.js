@@ -1,9 +1,12 @@
+import Certificates from './Certificates'
+
 
 function Skills() {
     return (
       <div className="skills" id="skills">
         <div className="container reveal">
             <h2 className="sub-heading">Skills</h2>
+            <p className="sub-sub-heading">Feel free to check out projects that I made through courses and also in my own time.</p>
             <div className="skill-items">
               <div className="skill">
                 <h3 className="skill-title">HTML</h3>
@@ -26,6 +29,7 @@ function Skills() {
                 <ion-icon name="git-branch-outline"></ion-icon>
               </div> 
             </div>
+            <Certificates />
         </div>
       </div>
     );
