@@ -405,12 +405,7 @@ ion-icon[name=git-branch-outline],
 
 /* Skills */
 
-.skills {
-  min-height: 50vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .skill-items {
   display: flex;
@@ -438,10 +433,9 @@ ion-icon[name=logo-css3],
 ion-icon[name=logo-javascript],
 ion-icon[name=logo-react],
 ion-icon[name=git-branch-outline] {
-  font-size: 8rem;
+  font-size: 10rem;
   margin: 0;
   line-height: 0;
-  text-shadow: #181818 2px 2px 2px;
   margin-bottom: 0.2em;
 }
 
@@ -517,10 +511,12 @@ ion-icon[name=git-branch-outline] {
 
 .card-link {
   display: block;
-  padding: 0.5em 0.9em;
+  padding: 0.8em 0.9em;
   transition: filter 0.3s;
   border-radius: 5px;
   width: 100%;
+  font-weight: bold;
+  letter-spacing: 0.6px;
 }
 
 .card-link:hover {
@@ -700,7 +696,7 @@ ion-icon[name=git-branch-outline] {
 
   .skill-items {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
   }
 
 }
