@@ -24,7 +24,7 @@ export default [
         siteUrl: "https://benunitconverter.netlify.app/"
     },
     {
-        title: 'Comment Section',
+        title: 'User Review Section',
         url: require('./images/comments-img.png'),
         description: "A site for users to write a comment/review with their name",
         siteUrl: "https://benallington-commentsection.netlify.app"

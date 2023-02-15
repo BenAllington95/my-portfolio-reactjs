@@ -76,17 +76,14 @@ a {
 
 .about,
 .header,
-.card, 
-.footer,
 .header-top,
-.projects, 
-.skills {
+.projects {
   transition: all .2s ease-in-out;
   background: #181818;
 }
 
-.card {
-  background: #212121;
+.card, .skills, .footer {
+  background: #191919;
 }
 
 .about,
@@ -110,7 +107,8 @@ ion-icon[name=logo-html5],
 ion-icon[name=logo-css3], 
 ion-icon[name=logo-javascript],
 ion-icon[name=logo-react],
-ion-icon[name=git-branch-outline] {
+ion-icon[name=git-branch-outline],
+.skill-title {
   color: #ffffff;
   transition: all .2s ease-in-out;
 } /* Need to create a class to make this easier to understand */
@@ -167,11 +165,17 @@ ion-icon[name=git-branch-outline] {
   color: #5a6d6c;
 }
 
+#app-light .code-link {
+  background: #c0cbca;
+  color: #5a6d6c;
+}
+
 #app-light ion-icon[name=logo-html5],
 #app-light ion-icon[name=logo-css3], 
 #app-light ion-icon[name=logo-javascript],
 #app-light ion-icon[name=logo-react],
-#app-light ion-icon[name=git-branch-outline] {
+#app-light ion-icon[name=git-branch-outline],
+#app-light .skill-title {
   color: #e9eded;
 }
 
@@ -198,7 +202,7 @@ ion-icon[name=git-branch-outline] {
 
 
 #app-light .card-link:hover {
-  filter: brightness(90%)
+  filter: brightness(110%)
 }
 
 #app-light .nav-list-items:hover {
@@ -208,6 +212,11 @@ ion-icon[name=git-branch-outline] {
 
 #app-light .card {
   border: none;
+}
+
+#app-light .footer-list-items,
+#app-light .footer-text {
+  color: #e9eded;
 }
 
 
@@ -340,8 +349,11 @@ ion-icon[name=git-branch-outline] {
   color: #E2CF00;
 }
 
+/* Fadein Animation */
+
 .main-subheading,
-.main-heading {
+.main-heading,
+.nav-list {
   animation: fadein 1s;
 }
 
@@ -398,14 +410,14 @@ ion-icon[name=git-branch-outline] {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .skill-items {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 2em;
   gap: 25px;
 }
@@ -419,7 +431,6 @@ ion-icon[name=git-branch-outline] {
 
 .skill-title {
   margin-bottom: 0.5em;
-  color: #dce4e3;
 }
 
 ion-icon[name=logo-html5],
@@ -427,7 +438,7 @@ ion-icon[name=logo-css3],
 ion-icon[name=logo-javascript],
 ion-icon[name=logo-react],
 ion-icon[name=git-branch-outline] {
-  font-size: 7rem;
+  font-size: 8rem;
   margin: 0;
   line-height: 0;
   text-shadow: #181818 2px 2px 2px;
@@ -465,7 +476,7 @@ ion-icon[name=git-branch-outline] {
 
 .card-img {
   width: 100%;
-  height: 50%;
+  height: 40%;
   object-fit: cover;
   border-top-left-radius: 14px;
   border-top-right-radius: 14px;
@@ -476,7 +487,7 @@ ion-icon[name=git-branch-outline] {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 50%;
+  height: 60%;
 }
 
 .card:hover {
@@ -485,13 +496,12 @@ ion-icon[name=git-branch-outline] {
 
 .card-title, .card-desc {
   text-align: center;
-  margin-bottom: 0.3em;
   word-wrap: break-word;
   padding: 0 1rem; 
 }
 
 .card-desc {
-  margin-bottom: 0.5em;
+  margin: 1em 0;
 }
 
 .card-links {
@@ -652,7 +662,7 @@ ion-icon[name=git-branch-outline] {
   .card {
     width: 100%;
     max-width: 100%;
-    height: 250px;
+    height: 200px;
     flex-direction: row;
   }
 
@@ -690,6 +700,7 @@ ion-icon[name=git-branch-outline] {
 
   .skill-items {
     flex-direction: row;
+    justify-content: space-between;
   }
 
 }
@@ -724,10 +735,16 @@ ion-icon[name=git-branch-outline] {
 }
 
 
-.code-link {
-  background: #c0cbca;
-  color: #202020;
+.card-link {
+  background: #E2CF00;
+  color: #242424;
 }
 
+
+
+.code-link {
+  background: #202020;
+  color: #ffffff;
+}
 
 
