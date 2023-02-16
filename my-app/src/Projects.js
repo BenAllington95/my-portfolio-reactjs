@@ -19,8 +19,8 @@ function Projects() {
     return (
       <div className={`projects`} id="projects">
         <div className="container reveal">
-          <h2 className="sub-heading">Projects</h2>
-          <p className="sub-sub-heading">Feel free to check out projects that I made through courses and also in my own time.</p>
+          <h2 className="section-heading">Projects</h2>
+          <p className="section-sub-heading">Feel free to check out projects that I made through courses and also in my own time.</p>
           <div className="project-cards">
           {projectMap}
           </div>
