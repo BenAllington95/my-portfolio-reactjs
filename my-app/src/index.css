@@ -108,6 +108,7 @@ a {
 .about-text, 
 .section-heading,
 .footer-text,
+.footer-list-items,
 .hamburger-list-items,
 .hamburger-close-icon, 
 ion-icon[name=logo-html5],
@@ -123,9 +124,21 @@ ion-icon[name=git-branch-outline],
 
 .section-heading,
 .main-heading,
-.main-subheading {
+.main-subheading,
+.footer-list-items:hover {
   color: #E2CF00;
 }
+
+.card-link {
+  background: #E2CF00;
+  color: #242424;
+}
+
+.code-link {
+  background: #202020;
+  color: #ffffff;
+}
+
 
 /* Light Mode */
 
@@ -144,18 +157,11 @@ ion-icon[name=git-branch-outline],
   background: #5a6d6c;
 }
 
-#app-light .card-link {
-  border: 1px solid #5a6d6c;
+#app-light .card,
+#app-light .hamburger-nav,
+#app-light .code-link {
+  background: #dce4e3;
 }
-
-
-
-#app-light .card-link {
-  transition: all 0.1s ease-in;
-}
-
-
-
 
 #app-light ion-icon[name=logo-html5],
 #app-light ion-icon[name=logo-css3], 
@@ -166,45 +172,10 @@ ion-icon[name=git-branch-outline],
 #app-light .skill-title,
 #app-light .skills .section-heading,
 #app-light .skills .section-sub-heading,
-#app-light .card-link {
-  color: #e9eded;
-}
-
-#app-light .hamburger-icon, 
-#app-light .hamburger-close-icon,
-#app-light .footer-list-items,
-#app-light .main-subheading,
-#app-light .main-heading,
-#app-light .footer-text,
-#app-light .main-subheading {
-  color:#5a6d6c;
-}
-
-#app-light .header-title,
-#app-light .nav-list-items,
-#app-light .accent-text,
-#app-light .section-heading,
-#app-light .section-sub-heading  {
-  color:#5a6d6c;
-}
-
-#app-light .card-link:hover {
-  filter: brightness(110%)
-}
-
-#app-light .card {
-  border: none;
-}
-
+#app-light .card-link,
 #app-light .footer-list-items,
 #app-light .footer-text {
   color: #e9eded;
-}
-
-#app-light .card,
-#app-light .hamburger-nav,
-#app-light .code-link {
-  background: #dce4e3;
 }
 
 #app-light .about,
@@ -216,14 +187,37 @@ ion-icon[name=git-branch-outline],
 #app-light .card-title,
 #app-light .about-text, 
 #app-light .section-heading,
-#app-light .footer-text,
 #app-light .hamburger-list-items,
 #app-light .card-desc,
-#app-light .code-link {
+#app-light .code-link,
+#app-light .header-title,
+#app-light .nav-list-items,
+#app-light .accent-text,
+#app-light .section-heading,
+#app-light .section-sub-heading,
+#app-light .hamburger-icon, 
+#app-light .hamburger-close-icon,
+#app-light .main-subheading,
+#app-light .main-heading,
+#app-light .main-subheading {
   color: #5a6d6c;
 }
 
+#app-light .card-link {
+  border: 1px solid #5a6d6c;
+}
 
+#app-light .card-link {
+  transition: all 0.1s ease-in;
+}
+
+#app-light .card-link:hover {
+  filter: brightness(110%)
+}
+
+#app-light .card {
+  border: none;
+}
 
 
 /* Header */
@@ -552,14 +546,9 @@ ion-icon[name=git-branch-outline] {
 }
 
 .footer-list-items {
-  color: #DCDCDC;
   list-style-type: none;
   font-size: 2em;
   line-height: 0;
-}
-
-.footer-list-items:hover {
-  color:#E2CF00;
 }
 
 .github {
@@ -736,17 +725,4 @@ ion-icon[name=git-branch-outline] {
 
 .active.fade-bottom {
   animation: fade-bottom 1s ease-in;
-}
-
-
-.card-link {
-  background: #E2CF00;
-  color: #242424;
-}
-
-
-
-.code-link {
-  background: #202020;
-  color: #ffffff;
 }

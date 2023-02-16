@@ -3,7 +3,8 @@ export default [
         title: 'Diner App',
         url: require('./images/diner-img.png'),
         description: "A site designed to order food for mobile users",
-        siteUrl: "https://bensdinerapp.netlify.app/"
+        siteUrl: "https://bensdinerapp.netlify.app/",
+        codeUrl: "https://github.com/BenAllington95/portfolio-website"
     },
     {
         title: 'Password Generator',
