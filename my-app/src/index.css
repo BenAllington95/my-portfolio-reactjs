@@ -115,12 +115,15 @@ ion-icon[name=logo-css3],
 ion-icon[name=logo-javascript],
 ion-icon[name=logo-react],
 ion-icon[name=git-branch-outline],
-.skill-title {
+.skill-title,
+.section-sub-heading {
   color: #ffffff;
   transition: all .2s ease-in-out;
 } /* Need to create a class to make this easier to understand */
 
-.section-heading {
+.section-heading,
+.main-heading,
+.main-subheading {
   color: #E2CF00;
 }
 
@@ -134,13 +137,10 @@ ion-icon[name=git-branch-outline],
   background: #e9eded;
 }
 
-#app-light .card {
-  background: #dce4e3;
-}
-
 #app-light .skills,
 #app-light .card-link,
-#app-light .footer {
+#app-light .footer,
+#app-light .nav-list-items:hover {
   background: #5a6d6c;
 }
 
@@ -148,17 +148,63 @@ ion-icon[name=git-branch-outline],
   border: 1px solid #5a6d6c;
 }
 
-#app-light .hamburger-nav {
-  background: #c0cbca;
+
+
+#app-light .card-link {
+  transition: all 0.1s ease-in;
 }
 
+
+
+
+#app-light ion-icon[name=logo-html5],
+#app-light ion-icon[name=logo-css3], 
+#app-light ion-icon[name=logo-javascript],
+#app-light ion-icon[name=logo-react],
+#app-light ion-icon[name=git-branch-outline],
+#app-light .nav-list-items:hover,
+#app-light .skill-title,
 #app-light .skills .section-heading,
+#app-light .skills .section-sub-heading,
 #app-light .card-link {
   color: #e9eded;
 }
 
-#app-light .card-link {
-  transition: all 0.1s ease-in;
+#app-light .hamburger-icon, 
+#app-light .hamburger-close-icon,
+#app-light .footer-list-items,
+#app-light .main-subheading,
+#app-light .main-heading,
+#app-light .footer-text,
+#app-light .main-subheading {
+  color:#5a6d6c;
+}
+
+#app-light .header-title,
+#app-light .nav-list-items,
+#app-light .accent-text,
+#app-light .section-heading,
+#app-light .section-sub-heading  {
+  color:#5a6d6c;
+}
+
+#app-light .card-link:hover {
+  filter: brightness(110%)
+}
+
+#app-light .card {
+  border: none;
+}
+
+#app-light .footer-list-items,
+#app-light .footer-text {
+  color: #e9eded;
+}
+
+#app-light .card,
+#app-light .hamburger-nav,
+#app-light .code-link {
+  background: #dce4e3;
 }
 
 #app-light .about,
@@ -172,63 +218,11 @@ ion-icon[name=git-branch-outline],
 #app-light .section-heading,
 #app-light .footer-text,
 #app-light .hamburger-list-items,
-#app-light .card-desc {
-  color: #5a6d6c;
-}
-
+#app-light .card-desc,
 #app-light .code-link {
-  background: #dce4e3;
   color: #5a6d6c;
 }
 
-#app-light ion-icon[name=logo-html5],
-#app-light ion-icon[name=logo-css3], 
-#app-light ion-icon[name=logo-javascript],
-#app-light ion-icon[name=logo-react],
-#app-light ion-icon[name=git-branch-outline],
-#app-light .skill-title {
-  color: #e9eded;
-}
-
-#app-light .hamburger-icon, 
-#app-light .hamburger-close-icon,
-#app-light .footer-list-items,
-#app-light .main-subheading,
-#app-light .main-heading,
-#app-light .footer-text {
-  color:#5a6d6c;
-}
-
-#app-light .main-subheading {
-  color: #5a6d6c
-}
-
-#app-light .header-title,
-#app-light .nav-list-items,
-#app-light .accent-text,
-#app-light .section-heading  {
-  color:#5a6d6c;
-}
-
-
-
-#app-light .card-link:hover {
-  filter: brightness(110%)
-}
-
-#app-light .nav-list-items:hover {
-  color: #e9eded;
-  background: #435251;
-}
-
-#app-light .card {
-  border: none;
-}
-
-#app-light .footer-list-items,
-#app-light .footer-text {
-  color: #e9eded;
-}
 
 
 
@@ -314,7 +308,6 @@ ion-icon[name=git-branch-outline],
 
 .nav-list-items,
 .hamburger-list-items,
-.card,
 .hamburger-icon, 
 .hamburger-close-icon  {
   cursor: pointer;
@@ -327,7 +320,6 @@ ion-icon[name=git-branch-outline],
 .main {
   padding: 1em;
   min-height: 92vh;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -351,13 +343,11 @@ ion-icon[name=git-branch-outline],
   letter-spacing: 2px;
   font-weight: bold;
   text-transform: uppercase;
-  color: #E2CF00;
   text-shadow: 0px 2px 0px rgba(0,0,0,0.2);
 }
 
 .main-heading {
   text-shadow: 0px 4px 0px rgba(0,0,0,0.2);
-  color: #E2CF00;
 }
 
 /* Fadein Animation */
@@ -466,14 +456,6 @@ ion-icon[name=git-branch-outline] {
 
 /* Projects */
 
-#app-light .section-sub-heading {
-  color: #5a6d6c;
-}
-
-#app-light .skills .section-sub-heading {
-  color: #dce4e3;
-}
-
 .project-cards {
   display: flex;
   justify-content: space-between;
@@ -488,7 +470,6 @@ ion-icon[name=git-branch-outline] {
 .card {
   display: flex;
   width: 100%;
-  max-width: 400px;
   height: 400px;
   border-radius: 15px;
   transition: filter 0.3s;
