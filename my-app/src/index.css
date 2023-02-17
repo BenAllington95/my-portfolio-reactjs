@@ -144,25 +144,13 @@ ion-icon[name=git-branch-outline],
 
 /* Light Mode */
 
+
 #app-light .about,
 #app-light .header,
 #app-light .projects,
 #app-light .header-top,
 #app-light .footer {
   background: #e9eded;
-}
-
-#app-light .skills,
-#app-light .card-link,
-#app-light .footer,
-#app-light .nav-list-items:hover {
-  background: #5a6d6c;
-}
-
-#app-light .card,
-#app-light .hamburger-nav,
-#app-light .code-link {
-  background: #dce4e3;
 }
 
 #app-light ion-icon[name=logo-html5],
@@ -178,6 +166,13 @@ ion-icon[name=git-branch-outline],
 #app-light .footer-list-items,
 #app-light .footer-text {
   color: #e9eded;
+}
+
+#app-light .skills,
+#app-light .card-link,
+#app-light .footer,
+#app-light .nav-list-items:hover {
+  background: #5a6d6c;
 }
 
 #app-light .about,
@@ -204,8 +199,19 @@ ion-icon[name=git-branch-outline],
   color: #5a6d6c;
 }
 
+#app-light .card,
+#app-light .hamburger-nav,
+#app-light .code-link {
+  background: #dce4e3;
+}
+
 #app-light .card-link {
   border: 1px solid #5a6d6c;
+}
+
+#app-light .main {
+  background-image: url('./images/light-main-img.png');
+  transition: all .2s ease-in-out;
 }
 
 #app-light .card-link {
@@ -327,11 +333,6 @@ ion-icon[name=git-branch-outline],
   transition: all .2s ease-in-out;
 }
 
-#app-light .main {
-  background-image: url('./images/light-main-img.png');
-  transition: all .2s ease-in-out;
-}
-
 
 .main-subheading {
   font-size: 1rem;
@@ -367,7 +368,6 @@ ion-icon[name=git-branch-outline],
 .skills {
   padding: 3em 2em;
 }
-
 
 .section-heading {
   text-align: center;
@@ -438,17 +438,6 @@ ion-icon[name=git-branch-outline] {
 
 
 
-/* Certificates */
-
-
-.certificate-img {
-  border-radius: 10px;
-  outline: solid 5px #c0cbca;
-  outline-offset: -5px;
-  max-width: 50%;
-}
-
-
 /* Projects */
 
 .project-cards {
@@ -458,9 +447,8 @@ ion-icon[name=git-branch-outline] {
   flex-direction: column;
   flex-wrap: wrap;
   margin-top: 2em;
-  gap: 25px;
+  gap: 20px;
 }
-
 
 .card {
   display: flex;
