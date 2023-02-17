@@ -22,14 +22,14 @@ body {
 }
 
 
+h1,
 h2, 
+h3,
+ul,
 li,
 p,
-ul,
-h1,
-h3,
-a,
-.moon-sharp {
+a
+{
   margin: 0;
 }
 
@@ -108,7 +108,6 @@ a {
 .card-link,
 .section-heading,
 .about-text, 
-.section-heading,
 .footer-text,
 .footer-list-items,
 .hamburger-list-items,
@@ -124,16 +123,17 @@ ion-icon[name=git-branch-outline],
   transition: all .2s ease-in-out;
 } /* Need to create a class to make this easier to understand */
 
-.section-heading,
 .main-heading,
 .main-subheading,
-.footer-list-items:hover {
+.footer-list-items:hover,
+.section-sub-heading {
   color: #79c0ff;
 }
 
 .card-link {
   background: #79c0ff;
   color: #242424;
+  border: 1px solid #79c0ff;
 }
 
 .code-link {
@@ -201,7 +201,7 @@ ion-icon[name=git-branch-outline],
 #app-light .hamburger-close-icon,
 #app-light .main-heading,
 #app-light .main-subheading {
-  color: #354140;
+  color: #5a6d6c;
 }
 
 #app-light .card-link {
@@ -492,7 +492,8 @@ ion-icon[name=git-branch-outline] {
   filter: brightness(110%);
 }
 
-.card-title, .card-desc {
+.card-title, 
+.card-desc {
   text-align: center;
   word-wrap: break-word;
   padding: 0 1rem; 
@@ -582,11 +583,19 @@ ion-icon[name=git-branch-outline] {
     font-size: 1.05rem;
   }
 
+  .container {
+    max-width: 700px;
+    width: 90%;
+    margin: 0 auto;
+  } 
+  
   .hamburger-icon {
     display: none;
   }  
 
-  .about, .projects, .skills {
+  .about, 
+  .projects, 
+  .skills {
     padding: 3em;
   }
 
@@ -600,7 +609,7 @@ ion-icon[name=git-branch-outline] {
     background: none;
     border: none;
     padding: 0;
-    gap: 18px;
+    gap: 10px;
   }
 
   .nav-list-items, 
@@ -608,25 +617,13 @@ ion-icon[name=git-branch-outline] {
     list-style-type: none;
     padding: 0.5em 0.75em;
     border-radius: 5px;
-    transition: background 0.2s, color 0.2s;
+    transition: all 0.2s;
   }
 
   .nav-list-items:hover, 
   .nav-list-items:focus {
     background: #79c0ff;
     color: #161b22;
-  }
-
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0em 3em;
-  }
-
-  .footer-list {
-    flex-direction: row;
-    gap: 20px;
   }
 
   /* Main */
@@ -648,9 +645,11 @@ ion-icon[name=git-branch-outline] {
 
   /* Projects */
 
-  .project-cards {
-    flex-direction: row;
+
+  .project-cards,
+  .footer-list {
     gap: 20px;
+    flex-direction: row;
   }
 
   .card {
@@ -679,7 +678,7 @@ ion-icon[name=git-branch-outline] {
   }
 
   .card-link {
-    padding: 0.75em;
+    padding: 0.5em;
   }
 
   
@@ -697,17 +696,8 @@ ion-icon[name=git-branch-outline] {
     justify-content: center;
   }
 
-}
+ 
 
-
-@media (min-width: 900px) {
-
-  .container {
-    max-width: 800px;
-    width: 90%;
-    margin: 0 auto;
-  } 
-  
 }
 
 /* Reveal Animation */

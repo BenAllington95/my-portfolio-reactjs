@@ -1,5 +1,3 @@
-import Certificates from './Certificates'
-
 
 function Skills() {
     return (
