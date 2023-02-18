@@ -137,8 +137,8 @@ ion-icon[name=git-branch-outline],
 }
 
 .code-link {
-  background: #161b22;
-  color: #c9d1d9;
+  background: #12171d;
+  color: #79c0ff;
 }
 
 
@@ -666,7 +666,7 @@ ion-icon[name=git-branch-outline] {
   }
 
   .card-link {
-    padding: 0.5em;
+    padding: 0.8em;
   }
 
   
