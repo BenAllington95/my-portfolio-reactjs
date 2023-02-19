@@ -65,7 +65,7 @@ export default [
     {
         title: 'Meme Generator',
         url: require('./images/meme-generator-img.png'),
-        description: "A react app that contacts an API to generate memes with user input ",
+        description: "A react app that fetches an API to generate memes with user input ",
         siteUrl: "#",
         codeUrl: "https://github.com/BenAllington95/my-travel-journel-react-js"
     },

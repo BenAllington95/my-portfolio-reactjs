@@ -488,7 +488,7 @@ ion-icon[name=git-branch-outline] {
 }
 
 .card-desc {
-  margin: 0.3em 0 0.6em;
+  margin: 0.3em 0 1em;
 }
 
 .card-links {
@@ -657,6 +657,7 @@ ion-icon[name=git-branch-outline] {
 
   .card-desc {
     text-align: left;
+    margin-bottom: 0.6em;
   }
 
 
