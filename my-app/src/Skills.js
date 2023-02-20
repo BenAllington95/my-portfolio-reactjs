@@ -22,10 +22,6 @@ function Skills() {
                 <h3 className="skill-title">React JS</h3>
                 <ion-icon name="logo-react"></ion-icon>
               </div> 
-              <div className="skill">
-                <h3 className="skill-title">Github</h3>
-                <ion-icon name="git-branch-outline"></ion-icon>
-              </div> 
             </div>
         </div>
       </div>
