@@ -45,21 +45,21 @@ export default [
         title: 'Instagram Clone',
         url: require('./images/instagram-img.png'),
         description: "A mobile styled app designed to emulate the Instagram app.",
-        siteUrl: "#",
+        siteUrl: "https://benallington-instagramclone.netlify.app/",
         codeUrl: "https://github.com/BenAllington95/instagram-clone-vanillajs"
     },
     {
         title: 'Tinder Clone (Tindog)',
         url: require('./images/tinder-img.png'),
         description: "A mobile styled app to mimic the Tinder app, but with dogs instead.",
-        siteUrl: "#",
+        siteUrl: "https://benallington-tindog.netlify.app/",
         codeUrl: "https://github.com/BenAllington95/tinder-clone-scrimba-challenge-js"
     },
     {
         title: 'Travel Journal',
         url: require('./images/travel-journal-img.png'),
         description: "A basic React app that showcases a travel journal.",
-        siteUrl: "#",
+        siteUrl: "https://benallington-mylearningjournal-react.netlify.app/",
         codeUrl: "https://github.com/BenAllington95/my-travel-journel-react-js"
     },
     {
