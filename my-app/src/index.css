@@ -229,6 +229,11 @@ ion-icon[name=git-branch-outline],
 
 /* Header */
 
+#header {
+  overflow: hidden;
+  z-index: 999;
+}
+
 .header-top {
   display: flex;
   justify-content: flex-end;
@@ -707,3 +712,8 @@ ion-icon[name=git-branch-outline] {
   animation: fade-bottom 1s ease-in;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
