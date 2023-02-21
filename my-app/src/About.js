@@ -4,7 +4,7 @@ function About() {
       <div className={`about`} id="about">
           <div className="container reveal">
             <h2 className="section-heading">About</h2>
-            <img className="about-img" src={require("./images/profile-img.png")} />
+            <img className="about-img" src={require("./images/profile-img.png")} alt="me"/>
             <p className="about-text">Hi, I'm Ben, a self-taught Front End Developer from the UK.</p>
             <p className="about-text">I seek a role within a commercial organisation to continue my development and a career path suited to my skills and interests. I am a keen learner and always look for ways to improve my skills.</p>
             <p className="about-text">I began to code in 2021 through the Scrimba Front End Developer Course which guided me to create various websites using HTML, CSS, Javascript, and React.</p>
