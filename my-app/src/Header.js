@@ -1,7 +1,3 @@
-
-// import hamburgerIcon from "./images/reorder-three-outline.svg";
-// import closeIcon from "./images/close-sharp.svg";
-
 import React from 'react';
 
 
