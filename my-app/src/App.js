@@ -26,8 +26,6 @@ function App() {
     setTheme(prevTheme => !prevTheme)
   }
 
-
-
   return (
     <div className="App" id={theme ? "" : "app-light"}>
       <Header 

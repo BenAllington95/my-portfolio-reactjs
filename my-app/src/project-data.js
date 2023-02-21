@@ -21,13 +21,6 @@ export default [
         codeUrl: "https://github.com/BenAllington95/my-travel-journel-react-js"
     },
     {
-        title: 'Meme Generator',
-        url: require('./images/meme-generator-img.png'),
-        description: "A React App that fetches an API to generate memes with user input ",
-        siteUrl: "#",
-        codeUrl: "https://github.com/BenAllington95/my-travel-journel-react-js"
-    },
-    {
         title: 'User Review Section',
         url: require('./images/comments-img.png'),
         description: "A section for users to write a comment/review.",
@@ -63,3 +56,11 @@ export default [
         codeUrl: "https://github.com/BenAllington95/tinder-clone-scrimba-challenge-js"
     },
 ]
+
+// {
+//     title: 'Meme Generator',
+//     url: require('./images/meme-generator-img.png'),
+//     description: "A React App that fetches an API to generate memes with user input ",
+//     siteUrl: "#",
+//     codeUrl: "https://github.com/BenAllington95/my-travel-journel-react-js"
+// },
