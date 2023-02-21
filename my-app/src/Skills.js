@@ -4,7 +4,7 @@ function Skills() {
       <div className="skills" id="skills">
         <div className="container reveal">
             <h2 className="section-heading">Skills</h2>
-            <p className="section-sub-heading">Here are some of the skills that I have learned since I first started:</p>
+            <p className="section-sub-heading">Here are the skills that I currently know: </p>
             <div className="skill-items">
               <div className="skill">
                 <h3 className="skill-title">HTML</h3>

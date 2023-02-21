@@ -20,7 +20,7 @@ function Projects() {
       <div className={`projects`} id="projects">
         <div className="container reveal">
           <h2 className="section-heading">Projects</h2>
-          <p className="section-sub-heading">Feel free to check out projects that I made through courses and in my own time.</p>
+          <p className="section-sub-heading">Feel free to check out projects that I have made so far:</p>
           <div className="project-cards">
           {projectMap}
           </div>
