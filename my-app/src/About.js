@@ -7,7 +7,7 @@ function About() {
             <img className="about-img" src={require("./images/profile-img.png")} alt="me"/>
             <p className="about-text">Hi, I'm Ben, a self-taught Front End Developer from the UK.</p>
             <p className="about-text">I seek a role within a commercial organisation to continue my development and a career path suited to my skills and interests. I am a keen learner and always look for ways to improve my skills.</p>
-            <p className="about-text">By completing various courses on my coding journey so far, I’ve been able to learn HTML, CSS, Javascript and React. I’ve put these skills into practice by building an array of projects.</p>
+            <p className="about-text">I began to code in 2021 through the Scrimba Front End Developer Course which guided me to create various websites using HTML, CSS, Javascript, and React.</p>
             <p className="about-text">Feel free to head to the <span className="sub-colour"><a href="#projects">projects</a></span> section to see the sites I have made so far!</p>
             <h3 className="sub-colour about-sub-heading">Hobbies</h3>
             <p className="about-text">I’m an active person who enjoys playing and watching sports in my free time, my favourites being football, basketball and F1.</p>
