@@ -713,9 +713,3 @@ ion-icon[name=logo-react],
 .active.fade-bottom {
   animation: fade-bottom 1s ease-in;
 }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
