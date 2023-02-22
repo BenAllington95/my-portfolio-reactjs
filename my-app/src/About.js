@@ -10,7 +10,8 @@ function About() {
             <p className="about-text">I began to code in 2021 through the Scrimba Front End Developer Course which guided me to create various websites using HTML, CSS, Javascript, and React.</p>
             <p className="about-text">Feel free to head to the <span className="accent-text"><a href="#projects">projects</a></span> section to see the sites I have made so far!</p>
             <h3 className="accent-text about-sub-heading">Hobbies</h3>
-            <p className="about-text">Whilst I believe that coding is a hobby of mine, I like to spend time doing other hobbies such as playing/watching sports such as Football, Basketball, and F1.</p>
+            <p className="about-text">I’m an active person who enjoys playing and watching sports in my free time, my favourites being football, basketball and F1.
+</p>
             <p className="about-text">I believe that my sporting background has always pushed me to improve myself in other areas.</p>
             <p className="about-text">If you would like to get in touch with me, the best way is by sending an email to <a href="mailto: benallington1995@gmail.com"><span className="accent-text">benallington1995@gmail.com</span></a>.</p>
           </div>
