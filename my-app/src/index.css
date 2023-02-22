@@ -63,7 +63,7 @@ a {
   color: #ffffff;
 }
 
-.accent-text {
+.sub-colour {
   color: #79c0ff;
   font-weight: bold;
 }
@@ -191,7 +191,7 @@ ion-icon[name=logo-react],
 #app-light .code-link,
 #app-light .header-title,
 #app-light .nav-list-items,
-#app-light .accent-text,
+#app-light .sub-colour,
 #app-light .section-heading,
 #app-light .section-sub-heading,
 #app-light .hamburger-icon, 
@@ -328,7 +328,7 @@ ion-icon[name=logo-react],
 
 .main {
   padding: 1em;
-  min-height: 91vh;
+  min-height: 92vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -347,7 +347,6 @@ ion-icon[name=logo-react],
   letter-spacing: 2.6px;
   font-weight: bold;
   text-transform: uppercase;
-  text-shadow: 0px 2px 0px rgba(0,0,0,0.2);
 }
 
 .main-heading {
@@ -632,7 +631,6 @@ ion-icon[name=logo-react],
   .main-subheading {
     font-size: 1.75rem;
     letter-spacing: 3.5px;
-    text-shadow: 0px 2px 0px rgba(0,0,0,0.2);
   }
 
   
