@@ -11,7 +11,7 @@ function Header(props) {
               <span className="hamburger-icon"><ion-icon onClick={props.toggleNavDisplay} name="reorder-three-outline"></ion-icon></span>
             </div>
             <ul className="nav-list">
-            <a href="#header"><li className="nav-list-items"><ion-icon name="home-sharp"></ion-icon></li></a>
+            <a href="#main"><li className="nav-list-items"><ion-icon name="home-sharp"></ion-icon></li></a>
             <a href="#about"><li className="nav-list-items">About</li></a>
             <a href="#skills"><li className="nav-list-items">Skills</li></a>
             <a href="#projects"><li className="nav-list-items">Projects</li></a>
