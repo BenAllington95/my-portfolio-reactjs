@@ -116,9 +116,10 @@ ion-icon[name=logo-html5],
 ion-icon[name=logo-css3], 
 ion-icon[name=logo-javascript],
 ion-icon[name=logo-react],
-ion-icon[name=logo-github],
+.skill ion-icon[name=logo-github],
 .skill-title,
-.section-sub-heading {
+.section-sub-heading,
+.main-heading {
   color: #c9d1d9;
   transition: all .2s ease-in-out;
 } /* Need to create a class to make this easier to understand */
@@ -157,7 +158,7 @@ ion-icon[name=logo-github],
 #app-light ion-icon[name=logo-css3], 
 #app-light ion-icon[name=logo-javascript],
 #app-light ion-icon[name=logo-react],
-#app-light ion-icon[name=logo-github],
+#app-light .footer-list-items [name=logo-github],
 #app-light .nav-list-items:hover,
 #app-light .skill-title,
 #app-light .skills .section-heading,
@@ -229,10 +230,6 @@ ion-icon[name=logo-github],
 
 /* Header */
 
-#header {
-  overflow: hidden;
-  z-index: 999;
-}
 
 .header-top {
   display: flex;
@@ -325,7 +322,7 @@ ion-icon[name=logo-github],
 
 .main {
   padding: 1em;
-  min-height: 100vh;
+  min-height: 92vh;
   display: flex;
   flex-direction: column;
   align-items: center;
