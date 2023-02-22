@@ -24,6 +24,7 @@ function Header(props) {
               <span className="hamburger-close-icon"><ion-icon onClick={props.toggleNavDisplay} name="close-sharp"></ion-icon></span>
             </div>
         <ul className="hamburger-list">
+          <a href="#main"><div onClick={props.toggleNavDisplay}><li className="hamburger-list-items"><ion-icon name="home-sharp"></ion-icon></li></div></a>
           <a href="#about"><div onClick={props.toggleNavDisplay}><li className="hamburger-list-items">About</li></div></a>
           <a href="#skills"><div onClick={props.toggleNavDisplay}><li className="hamburger-list-items">Skills</li></div></a>
           <a href="#projects"><div onClick={props.toggleNavDisplay}><li className="hamburger-list-items">Projects</li></div></a>
