@@ -7,6 +7,13 @@ export default [
         codeUrl: "https://github.com/BenAllington95/diner-app-vanillajs"
     },
     {
+        title: 'To Do List',
+        url: require('./images/to-do-list-img.png'),
+        description: "Add tasks to complete in your day, mark as complete or remove.",
+        siteUrl: "https://benallington-todolist.netlify.app/",
+        codeUrl: "https://github.com/BenAllington95/to-do-list-vanillajs"
+    },
+    {
         title: 'Password Generator',
         url: require('./images/password-img.png'),
         description: "Generate a random password with a choice of symbols, numbers, length etc.",
@@ -28,11 +35,11 @@ export default [
         codeUrl: "https://github.com/BenAllington95/comment-section-js"
     },
     {
-        title: 'Random RGB Generator',
+        title: 'RGBA Generator',
         url: require('./images/rgb-generator-img.png'),
         description: "Generate a random RGB colour.",
-        siteUrl: "https://benallington-rba-generator.netlify.app/",
-        codeUrl: "https://github.com/BenAllington95/instagram-clone-vanillajs"
+        siteUrl: "https://benallington-rgbacolorgenerator.netlify.app/",
+        codeUrl: "https://github.com/BenAllington95/rgba-color-generator-js"
     },
     {
         title: 'Unit Converter',
