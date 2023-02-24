@@ -17,7 +17,7 @@ export default [
         title: 'Password Generator',
         url: require('./images/password-img.png'),
         description: "Generate a random password with a choice of symbols, numbers, length etc.",
-        siteUrl: "https://getpasswordbyben.netlify.app/",
+        siteUrl: "https://benallington-passwordgenerator.netlify.app/",
         codeUrl: "https://github.com/BenAllington95/password-generator-vanillajs"
     },
     {
