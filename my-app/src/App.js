@@ -29,10 +29,10 @@ function App() {
   return (
     <div className="App" id={theme ? "" : "app-light"}>
       <Header 
-      toggleTheme={toggleTheme}
-      toggleNavDisplay={toggleNavDisplay} 
-      theme={theme} 
-      navDisplay={navDisplay} />
+        toggleTheme={toggleTheme}
+        toggleNavDisplay={toggleNavDisplay} 
+        theme={theme} 
+        navDisplay={navDisplay} />
       <Main />
       <About />
       <Skills />
