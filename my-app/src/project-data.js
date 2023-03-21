@@ -7,17 +7,17 @@ export default [
         codeUrl: "https://github.com/BenAllington95/to-do-list-vanillajs"
     },
     {
-        title: "Counter App",
+        title: "Counter",
         url: require("./images/counter-img.jpg"),
         description: "A simple and convenient tally counter application with a user-friendly interface",
         siteUrl: "https://benallington-counter.netlify.app/",
         codeUrl: "https://github.com/BenAllington95/counter-react"
     },
     {
-        title: "Sign Up App",
+        title: "Register Account",
         url: require("./images/register-img.png"),
         description: "A site that showcases a sign up page for various websites",
-        siteUrl: "https://benallington-counter.netlify.app/",
+        siteUrl: "https://benallington-registeraccount.netlify.app/",
         codeUrl: "https://github.com/BenAllington95/register-account-react-js"
     },
     {
