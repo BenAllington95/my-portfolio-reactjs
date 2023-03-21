@@ -14,7 +14,7 @@ export default [
         codeUrl: "https://github.com/BenAllington95/counter-react"
     },
     {
-        title: "Register Account",
+        title: "Sign Up App",
         url: require("./images/register-img.png"),
         description: "A site that showcases a sign up page for various websites",
         siteUrl: "https://benallington-counter.netlify.app/",
