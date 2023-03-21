@@ -1,17 +1,31 @@
 export default [
     {
-        title: "Diner App",
-        url: require("./images/diner-img.png"),
-        description: "Designed to order food for mobile users",
-        siteUrl: "https://bensdinerapp.netlify.app/",
-        codeUrl: "https://github.com/BenAllington95/diner-app-vanillajs"
-    },
-    {
         title: "To Do List",
         url: require("./images/to-do-list-img.png"),
         description: "Add tasks to complete in your day, mark as complete or remove.",
         siteUrl: "https://benallington-todolist.netlify.app/",
         codeUrl: "https://github.com/BenAllington95/to-do-list-vanillajs"
+    },
+    {
+        title: "Counter App",
+        url: require("./images/counter-img.jpg"),
+        description: "A simple and convenient tally counter application with a user-friendly interface",
+        siteUrl: "https://benallington-counter.netlify.app/",
+        codeUrl: "https://github.com/BenAllington95/counter-react"
+    },
+    {
+        title: "Register Account",
+        url: require("./images/register-img.png"),
+        description: "A site that showcases a sign up page for various websites",
+        siteUrl: "https://benallington-counter.netlify.app/",
+        codeUrl: "https://github.com/BenAllington95/register-account-react-js"
+    },
+    {
+        title: "Diner App",
+        url: require("./images/diner-img.png"),
+        description: "A mobile oriented site that allows users to order food on a diner app",
+        siteUrl: "https://bensdinerapp.netlify.app/",
+        codeUrl: "https://github.com/BenAllington95/diner-app-vanillajs"
     },
     {
         title: "Password Generator",
@@ -42,13 +56,6 @@ export default [
         codeUrl: "https://github.com/BenAllington95/rgba-color-generator-js"
     },
     {
-        title: "Unit Converter",
-        url: require("./images/unit-converter-img.png"),
-        description: "Input a number to return a converted unit value.",
-        siteUrl: "https://benunitconverter.netlify.app/",
-        codeUrl: "https://github.com/BenAllington95/unit-converter-vanillajs"
-    },
-    {
         title: "My Portfolio",
         url: require("./images/website-card-img.png"),
         description: "A React App to showcase my projects, skills etc.",
@@ -62,6 +69,7 @@ export default [
         siteUrl: "https://benallington-tindog.netlify.app/",
         codeUrl: "https://github.com/BenAllington95/tinder-clone-scrimba-challenge-js"
     },
+
 ]
 
 // {
@@ -70,4 +78,12 @@ export default [
 //     description: "A React App that fetches an API to generate memes with user input ",
 //     siteUrl: "#",
 //     codeUrl: "https://github.com/BenAllington95/my-travel-journel-react-js"
+// },
+
+// {
+//     title: "Unit Converter",
+//     url: require("./images/unit-converter-img.png"),
+//     description: "Input a number to return a converted unit value.",
+//     siteUrl: "https://benunitconverter.netlify.app/",
+//     codeUrl: "https://github.com/BenAllington95/unit-converter-vanillajs"
 // },
