@@ -1,5 +1,12 @@
 export default [
     {
+        title: "Quiz App",
+        url: require("./images/quiz.png"),
+        description: "A Quiz site to test knowledge on various topics made on React.",
+        siteUrl: "https://benallington-quiz.netlify.app/",
+        codeUrl: "https://github.com/BenAllington95/quizzical-react"
+    },
+    {
         title: "To Do List",
         url: require("./images/to-do-list-img.png"),
         description: "Add tasks to complete in your day, mark as complete or remove.",
